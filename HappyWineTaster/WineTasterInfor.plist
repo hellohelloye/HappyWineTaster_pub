@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<array>
+		<string>James Laube</string>
+		<string>Kim Marcus</string>
+		<string>Thomas Matthews</string>
+		<string>James Molesworth</string>
+		<string>Bruce Sanderson</string>
+		<string>Harvey Steinman</string>
+		<string>Tim Fish</string>
+		<string>Alison Napjus</string>
+		<string>MaryAnn Worobiec</string>
+	</array>
+	<key>postion</key>
+	<array>
+		<string>Senior editor</string>
+		<string>Managing editor</string>
+		<string>Executive editor</string>
+		<string>Senior editor</string>
+		<string>Senior editor and tasting director</string>
+		<string>Editor at large</string>
+		<string>Senior editor</string>
+		<string>Senior editor and senior tasting coordinator</string>
+		<string>Senior editor and senior tasting coordinator</string>
+	</array>
+	<key>location</key>
+	<array>
+		<string>Napa</string>
+		<string>New York</string>
+		<string>New York</string>
+		<string>New York</string>
+		<string>New York</string>
+		<string>San Francisco</string>
+		<string>Napa</string>
+		<string>New York</string>
+		<string>Napa</string>
+	</array>
+	<key>tastingbeat</key>
+	<array>
+		<string>California</string>
+		<string>Argentina, Austria, Chile, Germany, Portugal</string>
+		<string>New York, Spain</string>
+		<string>Bordeaux, Finger Lakes, Loire Valley, Rhone Valley, South Africa</string>
+		<string>Burgundy, Italy</string>
+		<string>Australia, Oregon, Washington</string>
+		<string>California Merlot and Zinfandel, U.S. sparkling wines</string>
+		<string>Alsace, Beaujolais, Champagne, Italy</string>
+		<string>New Zealand, California (Petite Sirah, Sauvignon Blanc, other whites)</string>
+	</array>
+	<key>detail</key>
+	<array>
+		<string>James Laube is Wine Spectator&apos;s expert on the wines of California. He has been writing for the magazine since 1980, and he joined the staff full-time in 1983.
+
+The second edition of Laube&apos;s third book, California Wine, was published in 1999. The first edition of California Wine won the 1996 James Beard Award for best wine book of the year. His previous two books are California&apos;s Great Cabernets and California&apos;s Great Chardonnays.</string>
+		<string>Kim Marcus joined the Wine Spectator staff in San Francisco in 1988 and was reassigned to New York in 1993. He has been a regular taster since 1990.
+
+</string>
+		<string>Thomas Matthews has been writing for Wine Spectator since 1987, when he was a freelancer living in Bordeaux. Hired full-time in 1988, Matthews served first in the London office, then was reassigned to New York.</string>
+		<string>James Molesworth joined Wine Spectator in 1997, after working five years in retail wine sales and as a sommelier. He has been a regular taster since 2000.
+
+You can now follow James Molesworth on Twitter, at http://twitter.com/jmolesworth1.</string>
+		<string>Bruce Sanderson joined Wine Spectator in 1993, after working for the previous five years as a wine steward and in retail wine sales. As Tasting Director, he oversees Wine Spectator&apos;s tasting operations in New York, Napa and Europe.</string>
+		<string>Harvey Steiman joined Wine Spectator in 1983, after serving as food and wine editor of the San Francisco Examiner. Steiman&apos;s book Essentials of Wine, published in 2000, is a comprehensive introduction to wine basics.</string>
+		<string>Senior editor Tim Fish joined the Wine Spectator staff in 2001 and is based in Wine Spectator’s Napa, Calif., office. He is the lead taster for California Zinfandel and Merlot, as well as for U.S. sparkling wines. He was promoted to senior editor in 2013 and also assists with news and feature coverage for WineSpectator.com, for which he writes the popular weekly blog Exploring Wine.
+
+Fish earned a degree in journalism from Western Kentucky University. Prior to joining Wine Spectator, he worked for 20 years in newspapers, magazines and Internet ventures. Fish has been a resident of Sonoma County for more than two decades.</string>
+		<string>Alison Napjus, who has worked in Wine Spectator&apos;s New York office since 2000, is currently Wine Spectator&apos;s lead taster on Champagne, Alsace and Beaujolais; she also tastes the wines of northeastern Italy and Penedès in Spain. She has written numerous tasting reports and feature stories for Wine Spectator and WineSpectator.com. In 2012, she presented a tasting seminar on Krug Champagnes at the New World Wine Experience in Los Angeles. She was promoted to senior editor in December 2012.
+
+As senior tasting coordinator in Wine Spectator&apos;s New York office, Napjus is responsible for training new staff members, managing the cellars and coordinating blind tastings.
+
+Napjus graduated from Cornell University&apos;s School of Hotel Administration and worked at a number of restaurants; at the time she joined Wine Spectator, she was a manager at New York&apos;s Tribeca Grill, which later earned a Wine Spectator Grand Award.</string>
+		<string>MaryAnn Worobiec has been with Wine Spectator since 1997. As senior tasting coordinator in Wine Spectator&apos;s Napa, Calif., office, Worobiec has been responsible for training new staff members, managing the cellars and coordinating blind tastings. She is the lead taster for New Zealand and also tastes Petite Sirah, as well as Sauvignon Blanc and other white wines from California. She was promoted to senior editor in January 2013.
+
+A graduate of Ohio State University with a degree in political science and sociology, Worobiec worked for the Ohio House of Representatives before falling in love with wine.</string>
+	</array>
+</dict>
+</plist>
