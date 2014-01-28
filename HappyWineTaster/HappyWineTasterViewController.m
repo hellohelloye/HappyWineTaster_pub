@@ -76,6 +76,51 @@
                         }
                      }
                      completion:^(BOOL finished){
+                         for (UIView *drop in dropsToRemove) {
+                             //only left the red color bubles
+                             if (drop.backgroundColor != [UIColor redColor])
+                             {
+                                 //[dropsToRemove makeObjectsPerformSelector:@selector(removeObject:drop:)];
+                             } else {
+                                 [UIView animateWithDuration:1.0
+                                                  animations:^{
+                                                      drop.transform = CGAffineTransformRotate(CGAffineTransformScale(drop.transform, 1, 1), M_PI/2);
+                                                  }
+                                                  completion:^(BOOL finished){
+                                                      if (finished) {
+                                                          [UIView animateWithDuration:1
+                                                                                delay:0
+                                                                              options:UIViewAnimationOptionCurveLinear
+                                                                           animations:^{
+                                                                               drop.transform = CGAffineTransformRotate(CGAffineTransformScale(drop.transform, 0.7, 0.7), -M_PI/2);
+                                                                           }completion:^(BOOL finished){
+                                                                               if (finished) {
+                                                                                   [UIView animateWithDuration:1
+                                                                                                         delay:0
+                                                                                                       options:UIViewAnimationOptionCurveLinear
+                                                                                                    animations:^{
+                                                                                                        drop.transform = CGAffineTransformRotate(CGAffineTransformScale(drop.transform, 1, 1), M_PI/2);
+                                                                                                    }completion:^(BOOL finished){
+                                                                                                        if (finished) {
+                                                                                                            [UIView animateWithDuration:1
+                                                                                                                                  delay:0
+                                                                                                                                options:UIViewAnimationOptionCurveLinear
+                                                                                                                             animations:^{
+                                                                                                                                 drop.transform = CGAffineTransformRotate(CGAffineTransformScale(drop.transform, 0.7, 0.7), -M_PI/2);
+                                                                                                                             }completion:^(BOOL finished){
+                                                                                                                                 drop.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1, 1);
+                                                                                                                             }];
+                                                                                                        }
+                                                                                                    }];
+                                                                                   
+                                                                               }
+                                                                           }];
+
+                                                      }
+                                 }];
+                             }
+                         }
+
                         // [dropsToRemove makeObjectsPerformSelector:@selector(removeFromSuperview)];
                      }];
 }
