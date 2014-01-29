@@ -14,29 +14,74 @@
 		<string>Alison Napjus</string>
 		<string>MaryAnn Worobiec</string>
 	</array>
-	<key>postion</key>
+	<key>position</key>
 	<array>
-		<string>Senior editor</string>
-		<string>Managing editor</string>
-		<string>Executive editor</string>
-		<string>Senior editor</string>
-		<string>Senior editor and tasting director</string>
-		<string>Editor at large</string>
-		<string>Senior editor</string>
-		<string>Senior editor and senior tasting coordinator</string>
-		<string>Senior editor and senior tasting coordinator</string>
+		<string>Senior editor, New York</string>
+		<string>Managing editor, New York</string>
+		<string>Executive editor, New York</string>
+		<string>Senior editor, New York</string>
+		<string>Senior editor and tasting director, New York</string>
+		<string>Editor at large, San Francisco</string>
+		<string>Senior editor, Napa</string>
+		<string>Senior editor and senior tasting coordinator, New York</string>
+		<string>Senior editor and senior tasting coordinator, Napa</string>
 	</array>
 	<key>location</key>
 	<array>
-		<string>Napa</string>
-		<string>New York</string>
-		<string>New York</string>
-		<string>New York</string>
-		<string>New York</string>
-		<string>San Francisco</string>
-		<string>Napa</string>
-		<string>New York</string>
-		<string>Napa</string>
+		<dict>
+			<key>latitude</key>
+			<real>40.67</real>
+			<key>longitude</key>
+			<real>73.94</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>45.98</real>
+			<key>longitude</key>
+			<real>73.12</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>42.98</real>
+			<key>longitude</key>
+			<real>72.34999999999999</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>46.12</real>
+			<key>longitude</key>
+			<real>65.98</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>56.23</real>
+			<key>longitude</key>
+			<real>70.23</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>37.7749295</real>
+			<key>longitude</key>
+			<real>-122.4192355</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>38.3047222</real>
+			<key>longitude</key>
+			<real>-122.298889</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>42.78653</real>
+			<key>longitude</key>
+			<real>-74.00038847</real>
+		</dict>
+		<dict>
+			<key>latitude</key>
+			<real>39.1112222</real>
+			<key>longitude</key>
+			<real>-123.98888</real>
+		</dict>
 	</array>
 	<key>tastingbeat</key>
 	<array>
@@ -50,7 +95,7 @@
 		<string>Alsace, Beaujolais, Champagne, Italy</string>
 		<string>New Zealand, California (Petite Sirah, Sauvignon Blanc, other whites)</string>
 	</array>
-	<key>detail</key>
+	<key>introduction</key>
 	<array>
 		<string>James Laube is Wine Spectator&apos;s expert on the wines of California. He has been writing for the magazine since 1980, and he joined the staff full-time in 1983.
 

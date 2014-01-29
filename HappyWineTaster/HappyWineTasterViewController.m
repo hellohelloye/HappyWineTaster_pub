@@ -8,6 +8,7 @@
 
 #import "HappyWineTasterViewController.h"
 #import "DropBehavior.h"
+#import "WineTasterInformation.h"
 
 @interface HappyWineTasterViewController ()<UIDynamicAnimatorDelegate>
 @property (weak, nonatomic) IBOutlet UIView *rainView;
@@ -16,9 +17,26 @@
 @property (strong, nonatomic) IBOutlet UINavigationItem *navItem;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navLeftBtn;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navRightBtn;
+@property (strong, nonatomic) WineTasterInformation *wineTasterInfor;
+@property (strong, nonatomic, readwrite) NSArray *tasters;   ///array for fill in red bubles and pass to FindMeVC
 @end
 
 @implementation HappyWineTasterViewController
+
+- (void)awakeFromNib {
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    NSURL *wineTasterURL = [mainBundle URLForResource:@"WineTasterInformation" withExtension:@"plist"];
+    
+    self.tasters = [NSDictionary dictionaryWithContentsOfURL:wineTasterURL];
+    
+    ////////////////Connect to model
+    
+    
+    
+    ///////////////////////
+    
+    [super awakeFromNib];
+}
 
 - (void)viewDidLoad
 {
