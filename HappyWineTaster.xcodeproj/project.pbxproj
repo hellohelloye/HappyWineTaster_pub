@@ -21,9 +21,9 @@
 		0B75F9441896E4B000BA44C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9261896E4B000BA44C8 /* UIKit.framework */; };
 		0B75F94C1896E4B000BA44C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B75F94A1896E4B000BA44C8 /* InfoPlist.strings */; };
 		0B75F94E1896E4B000BA44C8 /* HappyWineTasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75F94D1896E4B000BA44C8 /* HappyWineTasterTests.m */; };
-		0BF0F4AF1897FB7C003C2EA1 /* grapevinecorner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F4AE1897FB7C003C2EA1 /* grapevinecorner.jpg */; };
 		0BF0F4B21897FE5D003C2EA1 /* DropBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */; };
 		0BF0F4B4189826A8003C2EA1 /* WineTasterInfor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */; };
+		0BF6A7C71899548D00B9BBB5 /* grapevinecorner.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		0B75F9491896E4B000BA44C8 /* HappyWineTasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HappyWineTasterTests-Info.plist"; sourceTree = "<group>"; };
 		0B75F94B1896E4B000BA44C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B75F94D1896E4B000BA44C8 /* HappyWineTasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HappyWineTasterTests.m; sourceTree = "<group>"; };
-		0BF0F4AE1897FB7C003C2EA1 /* grapevinecorner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grapevinecorner.jpg; sourceTree = "<group>"; };
 		0BF0F4B01897FE5D003C2EA1 /* DropBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBehavior.h; sourceTree = "<group>"; };
 		0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBehavior.m; sourceTree = "<group>"; };
 		0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WineTasterInfor.plist; sourceTree = "<group>"; };
+		0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grapevinecorner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +133,8 @@
 		0B75F9291896E4B000BA44C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */,
 				0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */,
-				0BF0F4AE1897FB7C003C2EA1 /* grapevinecorner.jpg */,
 				0B75F9311896E4B000BA44C8 /* HappyWineTasterAppDelegate.h */,
 				0B75F9321896E4B000BA44C8 /* HappyWineTasterAppDelegate.m */,
 				0B75F92A1896E4B000BA44C8 /* HappyWineTaster-Info.plist */,
@@ -240,10 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BF0F4AF1897FB7C003C2EA1 /* grapevinecorner.jpg in Resources */,
 				0BF0F4B4189826A8003C2EA1 /* WineTasterInfor.plist in Resources */,
 				0B75F93B1896E4B000BA44C8 /* Images.xcassets in Resources */,
 				0B75F92D1896E4B000BA44C8 /* InfoPlist.strings in Resources */,
+				0BF6A7C71899548D00B9BBB5 /* grapevinecorner.png in Resources */,
 				0B75F9361896E4B000BA44C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

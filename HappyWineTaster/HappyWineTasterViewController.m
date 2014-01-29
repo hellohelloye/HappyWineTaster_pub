@@ -13,6 +13,9 @@
 @property (weak, nonatomic) IBOutlet UIView *rainView;
 @property (strong, nonatomic)UIDynamicAnimator *animator;
 @property (strong, nonatomic)DropBehavior *mydropBehavior;
+@property (strong, nonatomic) IBOutlet UINavigationItem *navItem;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *navLeftBtn;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *navRightBtn;
 @end
 
 @implementation HappyWineTasterViewController
@@ -20,9 +23,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-   // self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapevinecorner.jpg"]];
     
+    NSShadow *shadow = [[NSShadow alloc]init];
+    shadow.shadowColor = [UIColor yellowColor];
+    shadow.shadowOffset = CGSizeMake(1, 0);
+    
+    [self.navLeftBtn setTitleTextAttributes:@{
+                                             NSForegroundColorAttributeName: [UIColor redColor],
+                                             NSShadowAttributeName:shadow,
+                                             NSShadowAttributeName:shadow,
+                                             NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
+                                             }
+                                   forState:UIControlStateNormal];
+    
+    [self.navRightBtn setTitleTextAttributes:@{
+                                               NSForegroundColorAttributeName: [UIColor redColor],
+                                               NSShadowAttributeName:shadow,
+                                               NSShadowAttributeName:shadow,
+                                               NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
+                                               }
+                                   forState:UIControlStateNormal];
+
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    // self.view.backgroundColor = [UIColor colorWithRed:173./255 green:234./255 blue:234./255 alpha:1.0];
+    // self.navigationController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
+    // self.navItem.titleView.backgroundColor = [UIColor colorWithRed:255./255 green:222./255 blue:223./255 alpha:1.0];
+     self.view.backgroundColor = [UIColor colorWithRed:255./255 green:222./255 blue:223./255 alpha:1.0];
 }
 
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator {
@@ -164,9 +194,17 @@ static const CGSize DROP_SIZE = {40,40};
     
     dropBtn.clipsToBounds = YES;
     dropBtn.layer.cornerRadius = frame.size.width/2;
+    if (dropBtn.backgroundColor == [UIColor redColor]) {
+        dropBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+        dropBtn.layer.borderWidth = 2.0f;
+    }
 
     [self.rainView addSubview:dropBtn];
     [self.mydropBehavior addItem:dropBtn];
+    
+}
+
+- (void)wineTasterContainer {
     
 }
 
@@ -174,8 +212,8 @@ static const CGSize DROP_SIZE = {40,40};
     switch (arc4random()%5) {
         case 0 : return [UIColor greenColor];
         case 1 : return [UIColor blueColor];
-        case 2 : return [UIColor orangeColor];
-        case 3 : return [UIColor redColor];
+        case 2 : return [UIColor redColor];
+        case 3 : return [UIColor yellowColor];
         case 4 : return [UIColor purpleColor];
     }
     return [UIColor blackColor];
@@ -188,20 +226,40 @@ static const CGSize DROP_SIZE = {40,40};
     
     ////need to modify code try to make different attribute string which represent different wine BY using for loop ?
     
-    UIFont *font1 = [UIFont fontWithName:@"Zapfino" size:10.0f];
-    UIFont *font2 = [UIFont fontWithName:@"HelveticaNeue-Medium"  size:10.0f];
+    UIFont *font1 = [UIFont fontWithName:@"Zapfino" size:5.0f];
+   // UIFont *font2 = [UIFont fontWithName:@"HelveticaNeue-Medium"  size:5.0f];
     
-    NSDictionary *dict1 = @{NSUnderlineStyleAttributeName:@(NSUnderlineStyleSingle),
+    NSDictionary *dict1 = @{NSUnderlineStyleAttributeName:@(NSUnderlineStyleNone),
                             NSFontAttributeName:font1};
-    NSDictionary *dict2 = @{NSUnderlineStyleAttributeName:@(NSUnderlineStyleNone),
-                            NSFontAttributeName:font2};
+   // NSDictionary *dict2 = @{NSUnderlineStyleAttributeName:@(NSUnderlineStyleNone),
+                           // NSFontAttributeName:font2};
     
     NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] init];
-    [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"Wine\n"    attributes:dict1]];
-    [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"TASTER"      attributes:dict2]];
     
+    switch (arc4random()%5) {
+        case 0 : {
+            [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"RED\n"    attributes:dict1]];
+          //  [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"Fruity|Savory"      attributes:dict2]];
+        }
+        case 1 : {
+            [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"ROSE\n"    attributes:dict1]];
+         //   [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"Semisweet|Dry"      attributes:dict2]];
+        }
+        case 2 : {
+            [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"WHITE\n"    attributes:dict1]];
+          //  [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"Dry|Sweet"      attributes:dict2]];
+        }
+        case 3 : {
+            [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"SPARKLING\n"    attributes:dict1]];
+          //  [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"White|Red|Rose"      attributes:dict2]];
+        }
+        case 4 : {
+            [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"FORTIFIED\n"    attributes:dict1]];
+          //  [attString appendAttributedString:[[NSAttributedString alloc] initWithString:@"Nutty|White|Red"      attributes:dict2]];
+        }
+    }
     
-    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(0, attString.length)];
+    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0, attString.length)];
     
     return attString;
 }
