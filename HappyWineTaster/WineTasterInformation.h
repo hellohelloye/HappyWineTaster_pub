@@ -7,15 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@interface WineTasterInformation : NSObject
+@interface WineTasterInformation : NSObject <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSString *postion;
-@property (strong, nonatomic) NSString *location;
+@property (strong, nonatomic) NSString *jobTitle;
+@property (strong, nonatomic) NSDictionary *location;
 @property (strong, nonatomic) NSString *tastingBeat;
 @property (strong, nonatomic) NSString *introduction;
 
-- (instancetype)initWithDictionary:(NSArray *)tasters;
+@property (assign, nonatomic) CLLocationCoordinate2D coordinate;
+
++ (id)wineTasterInformationFromDictionary:(NSDictionary *)taster;
 
 @end

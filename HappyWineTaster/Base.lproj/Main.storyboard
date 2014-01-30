@@ -7,7 +7,7 @@
         <!--Happy Wine Taster View Controller - Happy Wine Taster-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HappyWineTasterViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HappyWineTaster" id="vXZ-lx-hvc" customClass="HappyWineTasterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B8x-1b-lMb"/>
                         <viewControllerLayoutGuide type="bottom" id="bg9-2Y-iuT"/>
@@ -15,28 +15,17 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n03-CG-N6Q">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="NcX-bS-eeh" appends="YES" id="vDl-fs-byR"/>
-                                </connections>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NcX-bS-eeh" appends="YES" id="5xx-Xe-3JZ"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Happy Wine Taster" id="9y0-y1-f9y">
-                        <barButtonItem key="leftBarButtonItem" title="GrapeTree🍇" id="nW4-qn-fIZ">
-                            <connections>
-                                <segue destination="akW-pC-wit" kind="push" id="itv-jv-XYl"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="GrapeTree🍇" id="nW4-qn-fIZ"/>
                         <barButtonItem key="rightBarButtonItem" title="FindMe😜" id="qR5-jO-eFU">
                             <connections>
-                                <segue destination="uik-oV-iQD" kind="push" id="aQn-TE-BK2"/>
+                                <action selector="showFindMeViewController:" destination="vXZ-lx-hvc" id="VyS-qF-vxj"/>
+                                <segue destination="uik-oV-iQD" kind="modal" modalTransitionStyle="partialCurl" id="VT2-6F-sUg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -59,7 +48,7 @@
         <!--Find Me View Controller-->
         <scene sceneID="bAq-hy-GKF">
             <objects>
-                <viewController id="uik-oV-iQD" customClass="FindMeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FindMe" id="uik-oV-iQD" customClass="FindMeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9OQ-ks-P9V"/>
                         <viewControllerLayoutGuide type="bottom" id="X4P-ZS-Sqt"/>
@@ -72,11 +61,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuJ-NP-5wG">
+                                <rect key="frame" x="30" y="476" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="👻">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushBackBtn:" destination="uik-oV-iQD" eventType="touchUpInside" id="zWc-Sj-qFX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dlw-W4-yUA"/>
                     <connections>
+                        <outlet property="goBackBtn" destination="CuJ-NP-5wG" id="XTI-cd-xKx"/>
                         <outlet property="wineTasterMapView" destination="k7F-e5-MNp" id="lyx-Xv-aRb"/>
                     </connections>
                 </viewController>
@@ -87,7 +88,7 @@
         <!--Grape Tree View Controller-->
         <scene sceneID="e0o-iy-6UC">
             <objects>
-                <viewController id="akW-pC-wit" customClass="GrapeTreeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GrapeTree" id="akW-pC-wit" customClass="GrapeTreeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iil-gI-9LU"/>
                         <viewControllerLayoutGuide type="bottom" id="eM3-rz-Sdb"/>

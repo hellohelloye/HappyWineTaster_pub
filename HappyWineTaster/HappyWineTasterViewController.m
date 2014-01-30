@@ -9,6 +9,8 @@
 #import "HappyWineTasterViewController.h"
 #import "DropBehavior.h"
 #import "WineTasterInformation.h"
+#import "FindMeViewController.h"
+#import "GrapeTreeViewController.h"
 
 @interface HappyWineTasterViewController ()<UIDynamicAnimatorDelegate>
 @property (weak, nonatomic) IBOutlet UIView *rainView;
@@ -17,7 +19,7 @@
 @property (strong, nonatomic) IBOutlet UINavigationItem *navItem;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navLeftBtn;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navRightBtn;
-@property (strong, nonatomic) WineTasterInformation *wineTasterInfor;
+//@property (strong, nonatomic) WineTasterInformation *wineTasterInfor;
 @property (strong, nonatomic, readwrite) NSArray *tasters;   ///array for fill in red bubles and pass to FindMeVC
 @end
 
@@ -27,13 +29,15 @@
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSURL *wineTasterURL = [mainBundle URLForResource:@"WineTasterInformation" withExtension:@"plist"];
     
-    self.tasters = [NSDictionary dictionaryWithContentsOfURL:wineTasterURL];
+    NSMutableArray *helperArray = [[NSMutableArray alloc]init];
+    helperArray = [NSArray arrayWithContentsOfURL:wineTasterURL];
+
+    NSMutableArray *helper = [[NSMutableArray alloc]init];
+    for (NSDictionary *item in helperArray) {
+        [helper addObject:[WineTasterInformation wineTasterInformationFromDictionary:item]];
+    }
     
-    ////////////////Connect to model
-    
-    
-    
-    ///////////////////////
+    self.tasters = [helper copy];
     
     [super awakeFromNib];
 }
@@ -41,17 +45,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+   //  self.navigationController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
+   //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
     
     NSShadow *shadow = [[NSShadow alloc]init];
     shadow.shadowColor = [UIColor yellowColor];
     shadow.shadowOffset = CGSizeMake(1, 0);
     
     [self.navLeftBtn setTitleTextAttributes:@{
-                                             NSForegroundColorAttributeName: [UIColor redColor],
-                                             NSShadowAttributeName:shadow,
-                                             NSShadowAttributeName:shadow,
-                                             NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
-                                             }
+                                              NSForegroundColorAttributeName: [UIColor redColor],
+                                              NSShadowAttributeName:shadow,
+                                              NSShadowAttributeName:shadow,
+                                              NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
+                                              }
                                    forState:UIControlStateNormal];
     
     [self.navRightBtn setTitleTextAttributes:@{
@@ -60,18 +70,38 @@
                                                NSShadowAttributeName:shadow,
                                                NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
                                                }
-                                   forState:UIControlStateNormal];
-
+                                    forState:UIControlStateNormal];
     
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
+    
+    
+     self.view.backgroundColor = [UIColor colorWithRed:255./255 green:222./255 blue:223./255 alpha:1.0];
+   
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    // self.view.backgroundColor = [UIColor colorWithRed:173./255 green:234./255 blue:234./255 alpha:1.0];
-    // self.navigationController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
-    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
-    // self.navItem.titleView.backgroundColor = [UIColor colorWithRed:255./255 green:222./255 blue:223./255 alpha:1.0];
-     self.view.backgroundColor = [UIColor colorWithRed:255./255 green:222./255 blue:223./255 alpha:1.0];
-}
+/*- (IBAction)showFindMeViewController:(id)sender {
+    
+    FindMeViewController *fmvc = [self.storyboard instantiateViewControllerWithIdentifier:@"FindMe"];
+    
+    [UIView animateWithDuration:0.4
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+
+                         [self.view addSubview:fmvc.view];
+                         [self addChildViewController:fmvc];
+                     }completion:^(BOOL finished){
+                         if (finished) {
+                            
+                            [self.navigationController.navigationBar setBackgroundColor:[UIColor colorWithRed:0./255 green:127./255 blue:255./255 alpha:1.0]];
+                         }
+                        
+                     }];
+
+}*/
+
+
+
 
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator {
     [self removeCompletedRows];

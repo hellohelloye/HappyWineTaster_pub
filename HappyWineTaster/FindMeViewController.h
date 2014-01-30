@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "HappyWineTasterViewController.h"
 
 @interface FindMeViewController : UIViewController <MKMapViewDelegate, MKAnnotation, CLLocationManagerDelegate>
 @property (strong, nonatomic) IBOutlet MKMapView *wineTasterMapView;
-@property (strong, nonatomic) HappyWineTasterViewController *hwtvc;
+//@property (strong, nonatomic) HappyWineTasterViewController *hwtvc;
+
+
 @end

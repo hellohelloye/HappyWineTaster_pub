@@ -26,6 +26,7 @@
 		0B8DDA5118998208008A318D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8DDA5018998208008A318D /* MapKit.framework */; };
 		0B8DDA57189984AB008A318D /* WineTasterInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8DDA56189984AB008A318D /* WineTasterInformation.m */; };
 		0B8DDA5C1899A717008A318D /* WineTasterInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B8DDA5B1899A717008A318D /* WineTasterInformation.plist */; };
+		0BED2E8F189AEEA7004BE23F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BED2E8E189AEEA7004BE23F /* CoreLocation.framework */; };
 		0BF0F4B21897FE5D003C2EA1 /* DropBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */; };
 		0BF0F4B4189826A8003C2EA1 /* WineTasterInfor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */; };
 		0BF6A7C71899548D00B9BBB5 /* grapevinecorner.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */; };
@@ -69,6 +70,7 @@
 		0B8DDA55189984AB008A318D /* WineTasterInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineTasterInformation.h; sourceTree = "<group>"; };
 		0B8DDA56189984AB008A318D /* WineTasterInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineTasterInformation.m; sourceTree = "<group>"; };
 		0B8DDA5B1899A717008A318D /* WineTasterInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WineTasterInformation.plist; sourceTree = "<group>"; };
+		0BED2E8E189AEEA7004BE23F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0BF0F4B01897FE5D003C2EA1 /* DropBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBehavior.h; sourceTree = "<group>"; };
 		0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBehavior.m; sourceTree = "<group>"; };
 		0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WineTasterInfor.plist; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BED2E8F189AEEA7004BE23F /* CoreLocation.framework in Frameworks */,
 				0B8DDA5118998208008A318D /* MapKit.framework in Frameworks */,
 				0B75F9251896E4B000BA44C8 /* CoreGraphics.framework in Frameworks */,
 				0B75F9271896E4B000BA44C8 /* UIKit.framework in Frameworks */,
@@ -122,6 +125,7 @@
 		0B75F9211896E4B000BA44C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BED2E8E189AEEA7004BE23F /* CoreLocation.framework */,
 				0B8DDA5018998208008A318D /* MapKit.framework */,
 				0B75F9221896E4B000BA44C8 /* Foundation.framework */,
 				0B75F9241896E4B000BA44C8 /* CoreGraphics.framework */,

@@ -12,7 +12,7 @@
 			<key>latitude</key>
 			<real>40.67234</real>
 			<key>longitude</key>
-			<real>70.23333</real>
+			<real>-70.23333</real>
 		</dict>
 		<key>tastingbeat</key>
 		<string>California</string>
@@ -31,7 +31,7 @@ The second edition of Laube&apos;s third book, California Wine, was published in
 			<key>latitude</key>
 			<real>45.12345</real>
 			<key>longitude</key>
-			<real>73.12222</real>
+			<real>-73.12222</real>
 		</dict>
 		<key>tastingbeat</key>
 		<string>Argentina, Austria, Chile, Germany, Portugal</string>
@@ -50,7 +50,7 @@ The second edition of Laube&apos;s third book, California Wine, was published in
 			<key>latitude</key>
 			<real>42.98566</real>
 			<key>longitude</key>
-			<real>72.17777</real>
+			<real>-72.17777</real>
 		</dict>
 		<key>tastingbeat</key>
 		<string>New York, Spain</string>
@@ -67,7 +67,7 @@ The second edition of Laube&apos;s third book, California Wine, was published in
 			<key>latitude</key>
 			<real>46.111112</real>
 			<key>longitude</key>
-			<real>70.999887</real>
+			<real>-70.999887</real>
 		</dict>
 		<key>tastingbeat</key>
 		<string>Bordeaux, Finger Lakes, Loire Valley, Rhone Valley, South Africa</string>
@@ -86,7 +86,7 @@ You can now follow James Molesworth on Twitter, at http://twitter.com/jmoleswort
 			<key>latitude</key>
 			<real>56.23333</real>
 			<key>longitude</key>
-			<real>70.443265</real>
+			<real>-70.443265</real>
 		</dict>
 		<key>tastingbeat</key>
 		<string>Burgundy, Italy</string>
