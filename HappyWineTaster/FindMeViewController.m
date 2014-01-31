@@ -19,7 +19,6 @@
 
 @implementation FindMeViewController
 
-
 - (void)awakeFromNib {
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSURL *wineTasterURL = [mainBundle URLForResource:@"WineTasterInformation" withExtension:@"plist"];
@@ -41,6 +40,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+
 }
 
 - (void)setWineTasterMapView:(MKMapView *)wineTasterMapView {
@@ -58,11 +59,9 @@
 }
 
 - (IBAction)pushBackBtn:(id)sender {
-
 /*                           [self.view removeFromSuperview];
                              [self removeFromParentViewController];
                              [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
-
 */
     
     [self dismissViewControllerAnimated:YES completion:NULL];

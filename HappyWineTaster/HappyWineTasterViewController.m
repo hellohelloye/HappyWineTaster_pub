@@ -211,8 +211,7 @@
     return _mydropBehavior;
 }
 
-- (IBAction)tap:(UITapGestureRecognizer *)sender {
-    
+- (IBAction)tap:(UITapGestureRecognizer *)sender {    
     [self startRain];
 }
 
@@ -228,6 +227,7 @@
 
 static const CGSize DROP_SIZE = {40,40};
 - (void)startRain {
+    
     CGRect frame;
     frame.origin = CGPointZero;
     frame.size = DROP_SIZE;

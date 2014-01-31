@@ -1,0 +1,344 @@
+{
+    "RED": {
+        "Fruity Red": {
+            "Blueberry Blackberry": {
+                "Spicy": [
+                    "Shiraz",
+                    "Monastrell"
+                ],
+                "Round": [
+                    "Syrah",
+                    "Mencia",
+                    "Maibec",
+                    "Nero D'Avola",
+                    "Meritage",
+                    "Shiraz/Viognier",
+                    "Lacrima di Morro"
+                ],
+                "High Tannin": [
+                    "Mourvedre",
+                    "Petite Sirah",
+                    "Touriga Nacional",
+                    "Petit Verdot"
+                ]
+            },
+            "Black Cherry Raspberry": {
+                "Spicy": [
+                    "Sangiovese",
+                    "Cabernet Frane"
+                ],
+                "High Tannin": [
+                    "Tempranillo",
+                    "Priorat",
+                    "Cabernet Sauvignon",
+                    "Super Tuscan"
+                ],
+                "Round": [
+                    "Meriot",
+                    "Valpolicella",
+                    "Chateauneuf du Pape",
+                    "Amarone"
+                ]
+            },
+            "Strawberry Cherry": {
+                "Spicy": [
+                    "Counoise",
+                    "Carmenere",
+                    "Zinfandel",
+                    "Primitivo",
+                    "Barbera",
+                    "Grenache"
+                ],
+                "Round": [
+                    "Cotes du Rhone",
+                    "California Pinot Noir",
+                    "Chile Pinot Noir",
+                    "New Zealand Pinot Noir"
+                ]
+            },
+            "Tart Cherry Cranberry": {
+                "Spicy/Juicy": [
+                    "Zweigelt",
+                    "Gamay",
+                    "Blaufrankisch"
+                ],
+                "Round": [
+                    "Oregon Pinot Noir",
+                    "Spatburgunder",
+                    "St. Laurent"
+                ]
+            }
+        },
+        "Savory Red": {
+            "Black Pepper Gravel": {
+                "Spicy/Juicy": [
+                    "Chinon",
+                    "Montepulciano",
+                    "Bardolino",
+                    "Barbera d'Alba",
+                    "Bourgueil"
+                ],
+                "High Tannin": [
+                    "St. Julien",
+                    "Pauillac",
+                    "St. Estephe",
+                    "Haut Medoc",
+                    "Medoc",
+                    "Cahors"
+                ],
+                "Round": [
+                    "Pomerol",
+                    "St.Emilion",
+                    "Hermitage",
+                    "Bandol",
+                    "Cotes de Castillon",
+                    "Fronsac",
+                    "St. Joseph",
+                    "Rhone"
+                ]
+            },
+            "Smoke Tobacco Leather": {
+                "High Tannin": [
+                    "Taurasl",
+                    "Cahors",
+                    "Rioja",
+                    "Aglianico"
+                ],
+                "Round": [
+                    "Ribera Del Duero",
+                    "Graves",
+                    "Pessac-Leognan",
+                    "Rioja Reserva & Gran Reserva",
+                    "Cornas",
+                    "Cannonau"
+                ]
+            },
+            "Truffle Forest": {
+                "Spicy/Juicy": [
+                    "Beaujolais",
+                    "Pinotage"
+                ],
+                "Round": [
+                    "Dolcetto",
+                    "Bourgogne",
+                    "Cote Chalonnaise"
+                ]
+            },
+            "Clay Cured Meats": {
+                "High Tannin": [
+                    "Barolo",
+                    "Chianti",
+                    "Montefalco",
+                    "Barbaresco"
+                ],
+                "Round": [
+                    "Vacqueyras",
+                    "Carignan",
+                    "Gigondas",
+                    "Brunello di Montalcino"
+                ]
+            }
+        }
+    },
+    "WHITE": {
+        "Sweet White" : {
+             "Off-Dry Apricots Peaches" : [
+                  "Cour Cheverny",
+                  "Chenin Blanc",
+                  "Muller Thurgau",
+                  "Gewurtztraminer",
+                  "Vouvray",
+                  "Riesling(Kabinett)",
+                  "Riesling(Spatlese)"
+             ],
+             "Rich Tropical Honey" : [
+                  "'Late Harvest'",
+                  "Chenin Blanc(Moelleux)",
+                  "Malvasia",
+                  "Riesling(Auslese)",
+                  "Orvieto Abboccato",
+                  "Moscato",
+                  "Tokaji"
+             ]
+        },
+        "Dry White" : {
+             "Light Grapefruit Floral" : [
+                  "Greco di Tufo",
+                  "Pinot Blanc",
+                  "Orvieto",
+                  "Verdicchio",
+                  "Moschofilero",
+                  "Vermentino"
+             ],
+             "Light Citrus Lemon" : [
+                  "Silvaner",
+                  "Assyrtiko",
+                  "Muscadet",
+                  "Vinho Verde",
+                  "Unoaked Chardonnay",
+                  "Picpoul",
+                  "Chablis",
+                  "Gruner Veltliner",
+                  "Albarino",
+                  "Pinot Grigio",
+                  "Grenache Blanc"
+             ],
+             "Light Herbal Grassy" : [
+                  "Verdejo",
+                  "Cheveryny",
+                  "Sauvignon Blanc",
+                  "Touraine",
+                  "Ugni Blanc",
+                  "Sancerre",
+                  "White Bordeaux",
+                  "Pouilly Fume",
+                  "Entre-Deux-Mers"
+             ],
+             "Rich Creamy Nutty" : [
+                  "Meursault",
+                  "Cote de Beaune",
+                  "Viognier",
+                  "Savennieres",
+                  "White Bordeaux",
+                  "Soave",
+                  "Macconais",
+                  "Montrachet",
+                  "Chardonnay"
+             ],
+             "Medium Perfume Floral" : [
+                  "Semillon",
+                  "Marsanne",
+                  "Fiano",
+                  "Tokaji(dry)",
+                  "Viognier",
+                  "Chenin Blanc",
+                  "Roussanne",
+                  "Condreu",
+                  "Malvasla(dry)",
+                  "Vouvray",
+                  "Torrontes"
+             ]
+        }
+    },
+    "ROSE": {
+         "Dry Rose" : {
+             "Savory/Meaty" : [
+                  "Cabernet Sauvignon Rose",
+                  "Syrah Rose",
+                  "Cabernet Franc Rose",
+                  "Bandol Rose",
+                  "Loire Rose"
+             ],
+             "Fruity/Floral" : [
+                  "Pinot Noir Rose",
+                  "Grenache Rose",
+                  "Provence Rose",
+                  "Sangiovese Rose",
+                  "Rosado",
+                  "Tavel"
+             ]
+         },
+         "Semi-Sweet Rose" : [
+             "Blush Wine",
+             "White Merlot",
+             "White Zinfandel",
+             "Vin Grls",
+             "Rose d'Anjou",
+             "Garnacha Rosado"
+         ]
+    },
+    "SPARKLING WINE": {
+         "Rose Sparkling Wine" : {
+              "Dry Strawberry Light" : [
+                   "Rose Champagne",
+                   "Rose Sparkling Wine",
+                   "Cava Brut Rose"
+              ],
+              "Semi-Sweet Strawberry Orange" : [
+                   "Moscato Rose",
+                   "Brachetto d'Acqui Rose",
+                   "Cava Rose"
+              ]
+         },
+         "Red Sparkling Wine" : {
+              "Semi-Sweet Rasberry Cherry" : [
+                   "Lambrusco(Amabile)",
+                   "Brachetto d'Acqui"
+              ],
+              "Sweet Blueberry Cherry" : [
+                   "Lambrusco(Dolce or Amabile)",
+                   "Brachetto d'Acqui"
+              ],
+              "Dry Raspberry Blueberry" : [
+                   "Sparkling Shiraz",
+                   "Lambrusco(Secco)",
+                   "Lambrusco di Sorbara"
+              ]
+         },
+         "White Sparkling Wine" : {
+              "Sweet Apricots Rich": [
+                   "Asti Spumante",
+                   "'Doux'",
+                   "'Demi-Sec'",
+                   "Valdobbiadene",
+                   "Spumante",
+                   "Moscato d'Asti"
+              ],
+              "Semi-Sweet Floral" : [
+                   "Vouvray(Mousseux)",
+                   "Moscato",
+                   "Sparkling Riesling",
+                   "Prosecco",
+                   "Champagne(Extra Dry)"
+              ],
+              "Dry Light Citrus" : [
+                   "Non-Vintage Champagne(Brut)",
+                   "'Brut Nature'",
+                   "'Sec'",
+                   "Cava",
+                   "'Brut'",
+                   "'Extra-Brut'",
+                   "'Blanc de Blancs'",
+                   "Prosecco(Extra-Brut)"
+              ],
+              "Dry Creamy Rich" : [
+                   "Vintage Champagne",
+                   "'Blanc de Noirs'",
+                   "Vintage Franciacorta",
+                   "Vintage Sparkling Wine"
+              ]
+         }
+    },
+    "FORTIFIED WINE": {
+         "Red Fortified" : [
+            "Vintage Port",
+            "Ruby Port",
+            "LBV Port",
+            "Banyuls",
+            "Maury",
+            "Rasteau"
+         ],
+         "White Fortified" : [
+             "Muscat de Frontignan",
+             "Muscat de Beaumes de Venise",
+             "Muscat de Rivesaltes"
+         ],
+         "Nutty Fortified" : {
+              "Sweet" : [
+                  "Montilla-Moriles",
+                  "Vin Santo",
+                  "Cream Sherry",
+                  "Tawny Port",
+                  "Moscatel de Setubal"
+              ],
+              "Dry(semi-sweet)" : [
+                  "Marsala",
+                  "Amontillado Sherry",
+                  "Fino Sherry",
+                  "Madeira",
+                  "Oloroso Sherry",
+                  "Fino Sherry"
+              ]
+         }
+    }
+}
