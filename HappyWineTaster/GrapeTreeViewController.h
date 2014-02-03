@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GrapeTreeViewController : UIViewController
+@interface GrapeTreeViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UITableView *grapeTableView;
+
 @end

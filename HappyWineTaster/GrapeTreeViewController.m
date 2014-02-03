@@ -7,8 +7,11 @@
 //
 
 #import "GrapeTreeViewController.h"
+#import "DataGenerator.h"
+#import "GrapeTreeInformation.h"
 
 @interface GrapeTreeViewController ()
+@property(strong, nonatomic)GrapeTreeInformation *grapeTree;
 
 @end
 
@@ -18,7 +21,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+     self.grapeTree = [[DataGenerator alloc]grapeTreeInformationGenerator];
 }
+
+
 
 
 @end

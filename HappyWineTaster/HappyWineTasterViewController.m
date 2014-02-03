@@ -11,6 +11,7 @@
 #import "WineTasterInformation.h"
 #import "FindMeViewController.h"
 #import "GrapeTreeViewController.h"
+#import "DataGenerator.h"
 
 @interface HappyWineTasterViewController ()<UIDynamicAnimatorDelegate>
 @property (weak, nonatomic) IBOutlet UIView *rainView;
@@ -20,27 +21,15 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navLeftBtn;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navRightBtn;
 //@property (strong, nonatomic) WineTasterInformation *wineTasterInfor;
-@property (strong, nonatomic, readwrite) NSArray *tasters;   ///array for fill in red bubles and pass to FindMeVC
+//@property (strong, nonatomic, readwrite) NSArray *tasters;
 @end
 
 @implementation HappyWineTasterViewController
-
+/*
 - (void)awakeFromNib {
-    NSBundle *mainBundle = [NSBundle mainBundle];
-    NSURL *wineTasterURL = [mainBundle URLForResource:@"WineTasterInformation" withExtension:@"plist"];
-    
-    NSMutableArray *helperArray = [[NSMutableArray alloc]init];
-    helperArray = [NSArray arrayWithContentsOfURL:wineTasterURL];
-
-    NSMutableArray *helper = [[NSMutableArray alloc]init];
-    for (NSDictionary *item in helperArray) {
-        [helper addObject:[WineTasterInformation wineTasterInformationFromDictionary:item]];
-    }
-    
-    self.tasters = [helper copy];
-    
+    self.tasters = [[[DataGenerator alloc]wineTasterInformationGenerator] copy];
     [super awakeFromNib];
-}
+} */
 
 - (void)viewDidLoad
 {

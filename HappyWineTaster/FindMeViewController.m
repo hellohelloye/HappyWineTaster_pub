@@ -9,7 +9,7 @@
 #import "FindMeViewController.h"
 #import "WineTasterInformation.h"
 #import "HappyWineTasterViewController.h"
-
+#import "DataGenerator.h"
 
 @interface FindMeViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *goBackBtn;
@@ -20,28 +20,14 @@
 @implementation FindMeViewController
 
 - (void)awakeFromNib {
-    NSBundle *mainBundle = [NSBundle mainBundle];
-    NSURL *wineTasterURL = [mainBundle URLForResource:@"WineTasterInformation" withExtension:@"plist"];
     
-    NSMutableArray *helperArray = [[NSMutableArray alloc]init];
-    helperArray = [NSArray arrayWithContentsOfURL:wineTasterURL];
-    
-    NSMutableArray *helper = [[NSMutableArray alloc]init];
-    for (NSDictionary *item in helperArray) {
-        [helper addObject:[WineTasterInformation wineTasterInformationFromDictionary:item]];
-    }
-    
-    self.tasters = [helper copy];
-    
+    self.tasters = [[[DataGenerator alloc]wineTasterInformationGenerator] copy];
     [super awakeFromNib];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    
-
 }
 
 - (void)setWineTasterMapView:(MKMapView *)wineTasterMapView {
@@ -54,8 +40,6 @@
     } else {
         NSLog(@"no data");
     }
-   
-    
 }
 
 - (IBAction)pushBackBtn:(id)sender {

@@ -21,7 +21,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Happy Wine Taster" id="9y0-y1-f9y">
-                        <barButtonItem key="leftBarButtonItem" title="GrapeTree🍇" id="nW4-qn-fIZ"/>
+                        <barButtonItem key="leftBarButtonItem" title="GrapeTree🍇" id="nW4-qn-fIZ">
+                            <connections>
+                                <segue destination="akW-pC-wit" kind="push" id="sSh-cA-FHg"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="FindMe😜" id="qR5-jO-eFU">
                             <connections>
                                 <action selector="showFindMeViewController:" destination="vXZ-lx-hvc" id="VyS-qF-vxj"/>

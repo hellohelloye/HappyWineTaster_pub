@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B13366518A0064500747112 /* GrapeTreeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366418A0064500747112 /* GrapeTreeInformation.m */; };
+		0B13366818A0076100747112 /* DataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366718A0076100747112 /* DataGenerator.m */; };
 		0B75F9231896E4B000BA44C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9221896E4B000BA44C8 /* Foundation.framework */; };
 		0B75F9251896E4B000BA44C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9241896E4B000BA44C8 /* CoreGraphics.framework */; };
 		0B75F9271896E4B000BA44C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9261896E4B000BA44C8 /* UIKit.framework */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B13366318A0064500747112 /* GrapeTreeInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrapeTreeInformation.h; sourceTree = "<group>"; };
+		0B13366418A0064500747112 /* GrapeTreeInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrapeTreeInformation.m; sourceTree = "<group>"; };
+		0B13366618A0076100747112 /* DataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataGenerator.h; sourceTree = "<group>"; };
+		0B13366718A0076100747112 /* DataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataGenerator.m; sourceTree = "<group>"; };
 		0B75F91F1896E4B000BA44C8 /* HappyWineTaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyWineTaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B75F9221896E4B000BA44C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B75F9241896E4B000BA44C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -203,6 +209,8 @@
 			children = (
 				0BF0F4B01897FE5D003C2EA1 /* DropBehavior.h */,
 				0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */,
+				0B13366618A0076100747112 /* DataGenerator.h */,
+				0B13366718A0076100747112 /* DataGenerator.m */,
 			);
 			name = Action;
 			sourceTree = "<group>";
@@ -210,6 +218,8 @@
 		0B8DDA5418998403008A318D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0B13366318A0064500747112 /* GrapeTreeInformation.h */,
+				0B13366418A0064500747112 /* GrapeTreeInformation.m */,
 				0B8DDA55189984AB008A318D /* WineTasterInformation.h */,
 				0B8DDA56189984AB008A318D /* WineTasterInformation.m */,
 			);
@@ -324,6 +334,8 @@
 				0B8DDA57189984AB008A318D /* WineTasterInformation.m in Sources */,
 				0B75F9391896E4B000BA44C8 /* HappyWineTasterViewController.m in Sources */,
 				0BF0F4B21897FE5D003C2EA1 /* DropBehavior.m in Sources */,
+				0B13366518A0064500747112 /* GrapeTreeInformation.m in Sources */,
+				0B13366818A0076100747112 /* DataGenerator.m in Sources */,
 				0B75F9331896E4B000BA44C8 /* HappyWineTasterAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
