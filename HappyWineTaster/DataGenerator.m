@@ -23,7 +23,6 @@
     
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSURL *wineTasterURL = [mainBundle URLForResource:@"WineTasterInformation" withExtension:@"plist"];
-    
     NSMutableArray *helperArray = [[NSMutableArray alloc]init];
     helperArray = [NSArray arrayWithContentsOfURL:wineTasterURL];
     
@@ -39,13 +38,9 @@
     
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSURL *grapeTreeURL = [mainBundle URLForResource:@"wineTreeJsonData" withExtension:@"txt"];
-    
     NSData *jsonData = [NSData dataWithContentsOfURL:grapeTreeURL];
-    
     NSMutableDictionary *helperDict = [[NSMutableDictionary alloc]init];
-    
     helperDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
-
     
     GrapeTreeInformation *grapeTree = [GrapeTreeInformation GrapeTreeInformationFromDictionary:helperDict];;
     

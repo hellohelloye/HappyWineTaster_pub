@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0B13366518A0064500747112 /* GrapeTreeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366418A0064500747112 /* GrapeTreeInformation.m */; };
 		0B13366818A0076100747112 /* DataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366718A0076100747112 /* DataGenerator.m */; };
+		0B13366C18A03BA400747112 /* RedWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366B18A03BA400747112 /* RedWineCustomTVCell.m */; };
+		0B13366F18A03BE600747112 /* WhiteWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366E18A03BE600747112 /* WhiteWineCustomTVCell.m */; };
+		0B13367518A03C2200747112 /* RoseWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13367418A03C2200747112 /* RoseWineCustomTVCell.m */; };
+		0B13367818A03C3E00747112 /* SparklingWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13367718A03C3E00747112 /* SparklingWineCustomTVCell.m */; };
+		0B13367B18A03C5500747112 /* FortifiedWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13367A18A03C5500747112 /* FortifiedWineCustomTVCell.m */; };
 		0B75F9231896E4B000BA44C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9221896E4B000BA44C8 /* Foundation.framework */; };
 		0B75F9251896E4B000BA44C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9241896E4B000BA44C8 /* CoreGraphics.framework */; };
 		0B75F9271896E4B000BA44C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9261896E4B000BA44C8 /* UIKit.framework */; };
@@ -50,6 +55,16 @@
 		0B13366418A0064500747112 /* GrapeTreeInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrapeTreeInformation.m; sourceTree = "<group>"; };
 		0B13366618A0076100747112 /* DataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataGenerator.h; sourceTree = "<group>"; };
 		0B13366718A0076100747112 /* DataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataGenerator.m; sourceTree = "<group>"; };
+		0B13366A18A03BA400747112 /* RedWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedWineCustomTVCell.h; sourceTree = "<group>"; };
+		0B13366B18A03BA400747112 /* RedWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedWineCustomTVCell.m; sourceTree = "<group>"; };
+		0B13366D18A03BE600747112 /* WhiteWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteWineCustomTVCell.h; sourceTree = "<group>"; };
+		0B13366E18A03BE600747112 /* WhiteWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteWineCustomTVCell.m; sourceTree = "<group>"; };
+		0B13367318A03C2200747112 /* RoseWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoseWineCustomTVCell.h; sourceTree = "<group>"; };
+		0B13367418A03C2200747112 /* RoseWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoseWineCustomTVCell.m; sourceTree = "<group>"; };
+		0B13367618A03C3E00747112 /* SparklingWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SparklingWineCustomTVCell.h; sourceTree = "<group>"; };
+		0B13367718A03C3E00747112 /* SparklingWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparklingWineCustomTVCell.m; sourceTree = "<group>"; };
+		0B13367918A03C5500747112 /* FortifiedWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FortifiedWineCustomTVCell.h; sourceTree = "<group>"; };
+		0B13367A18A03C5500747112 /* FortifiedWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FortifiedWineCustomTVCell.m; sourceTree = "<group>"; };
 		0B75F91F1896E4B000BA44C8 /* HappyWineTaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyWineTaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B75F9221896E4B000BA44C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B75F9241896E4B000BA44C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,6 +126,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B13366918A0385E00747112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B13366A18A03BA400747112 /* RedWineCustomTVCell.h */,
+				0B13366B18A03BA400747112 /* RedWineCustomTVCell.m */,
+				0B13366D18A03BE600747112 /* WhiteWineCustomTVCell.h */,
+				0B13366E18A03BE600747112 /* WhiteWineCustomTVCell.m */,
+				0B13367318A03C2200747112 /* RoseWineCustomTVCell.h */,
+				0B13367418A03C2200747112 /* RoseWineCustomTVCell.m */,
+				0B13367618A03C3E00747112 /* SparklingWineCustomTVCell.h */,
+				0B13367718A03C3E00747112 /* SparklingWineCustomTVCell.m */,
+				0B13367918A03C5500747112 /* FortifiedWineCustomTVCell.h */,
+				0B13367A18A03C5500747112 /* FortifiedWineCustomTVCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		0B75F9161896E4B000BA44C8 = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +179,10 @@
 			isa = PBXGroup;
 			children = (
 				0B75F9341896E4B000BA44C8 /* Main.storyboard */,
+				0B8DDA53189983F5008A318D /* Action */,
 				0B8DDA4918998045008A318D /* Controller */,
 				0B8DDA5418998403008A318D /* Model */,
-				0B8DDA53189983F5008A318D /* Action */,
+				0B13366918A0385E00747112 /* View */,
 				0B75F93A1896E4B000BA44C8 /* Images.xcassets */,
 				0B75F9291896E4B000BA44C8 /* Supporting Files */,
 			);
@@ -328,8 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B13366F18A03BE600747112 /* WhiteWineCustomTVCell.m in Sources */,
+				0B13367818A03C3E00747112 /* SparklingWineCustomTVCell.m in Sources */,
 				0B8DDA4C18998076008A318D /* FindMeViewController.m in Sources */,
 				0B75F92F1896E4B000BA44C8 /* main.m in Sources */,
+				0B13367B18A03C5500747112 /* FortifiedWineCustomTVCell.m in Sources */,
 				0B8DDA4F18998094008A318D /* GrapeTreeViewController.m in Sources */,
 				0B8DDA57189984AB008A318D /* WineTasterInformation.m in Sources */,
 				0B75F9391896E4B000BA44C8 /* HappyWineTasterViewController.m in Sources */,
@@ -337,6 +373,8 @@
 				0B13366518A0064500747112 /* GrapeTreeInformation.m in Sources */,
 				0B13366818A0076100747112 /* DataGenerator.m in Sources */,
 				0B75F9331896E4B000BA44C8 /* HappyWineTasterAppDelegate.m in Sources */,
+				0B13367518A03C2200747112 /* RoseWineCustomTVCell.m in Sources */,
+				0B13366C18A03BA400747112 /* RedWineCustomTVCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
