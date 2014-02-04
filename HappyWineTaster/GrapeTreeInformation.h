@@ -7,9 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HWTNode.h"
 
 @interface GrapeTreeInformation : NSObject
 
+@property (strong, nonatomic)NSArray *firstLayer;
+@property (strong, nonatomic)NSArray *childLayer;
+
+
+@property (strong, nonatomic)NSArray *redWineFirstChild;
+@property (strong, nonatomic)NSArray *redWineFruityChild;
+@property (strong, nonatomic)NSArray *redWineSavoryChild;
+
+@property (strong, nonatomic)NSArray *whiteWineFirstChild;
+@property (strong, nonatomic)NSArray *roseWineFirstChild;
+@property (strong, nonatomic)NSArray *sparklingWineFirstChild;
+@property (strong, nonatomic)NSArray *fortifiedWineFirstChild;
+
+
++ (id)GrapeTreeInformationFromNode:(HWTNode *)rootNode;
+
+
+/*
 //Red wine collection
 @property(strong, nonatomic) NSDictionary *redWines;
 @property(strong, nonatomic) NSDictionary *savoryRed;
@@ -87,7 +106,5 @@
 @property(strong, nonatomic) NSDictionary *nuttyFortified;
 @property(strong, nonatomic) NSArray *nfSweet;
 @property(strong, nonatomic) NSArray *nfDry;
-
-+ (id)GrapeTreeInformationFromDictionary:(NSDictionary *)inforDict;
-
+*/
 @end

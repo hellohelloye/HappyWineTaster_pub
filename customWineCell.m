@@ -1,14 +1,14 @@
 //
-//  FortifiedWineCustomTVCell.m
+//  customWineCell.m
 //  HappyWineTaster
 //
-//  Created by Yukui ye on 2/3/14.
+//  Created by Yukui ye on 2/4/14.
 //  Copyright (c) 2014 M.Shanken. All rights reserved.
 //
 
-#import "FortifiedWineCustomTVCell.h"
+#import "customWineCell.h"
 
-@implementation FortifiedWineCustomTVCell
+@implementation customWineCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

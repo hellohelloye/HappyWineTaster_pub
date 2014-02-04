@@ -1,0 +1,43 @@
+{
+    "FirstLayer": [
+        "RED",
+        "WHITE",
+        "ROSE",
+        "SPARKLING WINE",
+        "FORTIFIED WINE"
+    ],
+    "RedWineFirstChild": [
+        "Fruity Red",
+        "Savory Red",
+        "Sweet Red"
+    ],
+    "RedWineFruityChild": [
+        "Blueberry Blackberry",
+        "Black Cherry Raspberry",
+        "Strawberry Cherry",
+        "Tart Cherry Cranberry"
+    ],
+    "RedWineSavoryChild": [
+        "Black Pepper Gravel",
+        "Smoke Tobacco Leather",
+        "Clay Cured Meats"
+    ],
+    "WhiteWineFirstChild": [
+        "Sweet White",
+        "Dry White"
+    ],
+    "RoseWineFirstChild": [
+        "Dry Rose",
+        "Semi-Sweet Rose"
+    ],
+    "SparklingWineFirstChild": [
+        "Rose Sparkling Wine",
+        "Red Sparkling Wine",
+        "White Sparkling Wine"
+    ],
+    "FortifiedWineFirstChild": [
+        "Red Fortified",
+        "White Fortified",
+        "Nutty Fortified"
+    ]
+}

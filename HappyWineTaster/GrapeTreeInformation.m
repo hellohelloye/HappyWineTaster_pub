@@ -17,6 +17,33 @@
     return self;
 }
 
+
++ (id)GrapeTreeInformationFromNode:(HWTNode *)rootNode {
+    
+    GrapeTreeInformation *grapeTree = [[GrapeTreeInformation alloc] init];
+
+    NSMutableArray *helperParent = [NSMutableArray array];
+    NSMutableArray *helperChildren = [NSMutableArray array];
+    
+    [rootNode.children enumerateObjectsUsingBlock:^(HWTNode *obj, NSUInteger idx, BOOL *stop) {
+        [helperParent addObject:obj.name];
+        if (obj.children) {
+            [obj.children enumerateObjectsUsingBlock:^(HWTNode *obj, NSUInteger idx, BOOL *stop) {
+                [helperChildren addObject:obj.name];
+            }];
+            grapeTree.childLayer = [helperChildren copy];
+        }
+    }];
+    grapeTree.firstLayer = [helperParent copy];
+
+    
+    
+    return grapeTree;
+}
+
+
+
+/*
 + (id)GrapeTreeInformationFromDictionary:(NSDictionary *)inforDict {
     GrapeTreeInformation *grapeTree = [[GrapeTreeInformation alloc]init];
     
@@ -59,7 +86,7 @@
     grapeTree.ftccRound = [grapeTree.fTartCherryCranberry valueForKey:@"Round"];
     grapeTree.ftccSpicy = [grapeTree.fTartCherryCranberry valueForKey:@"Spicy"];
     
-  //white
+    //white
     grapeTree.whiteWines = [inforDict valueForKey:@"WHITE"];
     grapeTree.dryWhite = [grapeTree.whiteWines valueForKey:@"Dry White"];
     grapeTree.dwLightGrapeFruitFloral = [grapeTree.dryWhite valueForKey:@"Light Grapefruit Floral"];
@@ -107,5 +134,6 @@
     
     return grapeTree;
 }
+ */
 
 @end

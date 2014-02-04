@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B13366518A0064500747112 /* GrapeTreeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366418A0064500747112 /* GrapeTreeInformation.m */; };
 		0B13366818A0076100747112 /* DataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366718A0076100747112 /* DataGenerator.m */; };
-		0B13366C18A03BA400747112 /* RedWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366B18A03BA400747112 /* RedWineCustomTVCell.m */; };
-		0B13366F18A03BE600747112 /* WhiteWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13366E18A03BE600747112 /* WhiteWineCustomTVCell.m */; };
-		0B13367518A03C2200747112 /* RoseWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13367418A03C2200747112 /* RoseWineCustomTVCell.m */; };
-		0B13367818A03C3E00747112 /* SparklingWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13367718A03C3E00747112 /* SparklingWineCustomTVCell.m */; };
-		0B13367B18A03C5500747112 /* FortifiedWineCustomTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B13367A18A03C5500747112 /* FortifiedWineCustomTVCell.m */; };
 		0B75F9231896E4B000BA44C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9221896E4B000BA44C8 /* Foundation.framework */; };
 		0B75F9251896E4B000BA44C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9241896E4B000BA44C8 /* CoreGraphics.framework */; };
 		0B75F9271896E4B000BA44C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75F9261896E4B000BA44C8 /* UIKit.framework */; };
@@ -37,6 +32,9 @@
 		0BEDD7BA189C401E0020907A /* wineTreeJsonData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0BEDD7B9189C401E0020907A /* wineTreeJsonData.txt */; };
 		0BF0F4B21897FE5D003C2EA1 /* DropBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */; };
 		0BF0F4B4189826A8003C2EA1 /* WineTasterInfor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */; };
+		0BF32E4218A16D2C00CA021D /* wineJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0BF32E4118A16D2C00CA021D /* wineJson.txt */; };
+		0BF32E4518A1737800CA021D /* HWTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF32E4418A1737800CA021D /* HWTNode.m */; };
+		0BF32E4818A182C400CA021D /* customWineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF32E4718A182C400CA021D /* customWineCell.m */; };
 		0BF6A7C71899548D00B9BBB5 /* grapevinecorner.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */; };
 /* End PBXBuildFile section */
 
@@ -55,16 +53,6 @@
 		0B13366418A0064500747112 /* GrapeTreeInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrapeTreeInformation.m; sourceTree = "<group>"; };
 		0B13366618A0076100747112 /* DataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataGenerator.h; sourceTree = "<group>"; };
 		0B13366718A0076100747112 /* DataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataGenerator.m; sourceTree = "<group>"; };
-		0B13366A18A03BA400747112 /* RedWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedWineCustomTVCell.h; sourceTree = "<group>"; };
-		0B13366B18A03BA400747112 /* RedWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedWineCustomTVCell.m; sourceTree = "<group>"; };
-		0B13366D18A03BE600747112 /* WhiteWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteWineCustomTVCell.h; sourceTree = "<group>"; };
-		0B13366E18A03BE600747112 /* WhiteWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteWineCustomTVCell.m; sourceTree = "<group>"; };
-		0B13367318A03C2200747112 /* RoseWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoseWineCustomTVCell.h; sourceTree = "<group>"; };
-		0B13367418A03C2200747112 /* RoseWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoseWineCustomTVCell.m; sourceTree = "<group>"; };
-		0B13367618A03C3E00747112 /* SparklingWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SparklingWineCustomTVCell.h; sourceTree = "<group>"; };
-		0B13367718A03C3E00747112 /* SparklingWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparklingWineCustomTVCell.m; sourceTree = "<group>"; };
-		0B13367918A03C5500747112 /* FortifiedWineCustomTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FortifiedWineCustomTVCell.h; sourceTree = "<group>"; };
-		0B13367A18A03C5500747112 /* FortifiedWineCustomTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FortifiedWineCustomTVCell.m; sourceTree = "<group>"; };
 		0B75F91F1896E4B000BA44C8 /* HappyWineTaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyWineTaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B75F9221896E4B000BA44C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B75F9241896E4B000BA44C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +85,11 @@
 		0BF0F4B01897FE5D003C2EA1 /* DropBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBehavior.h; sourceTree = "<group>"; };
 		0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBehavior.m; sourceTree = "<group>"; };
 		0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WineTasterInfor.plist; sourceTree = "<group>"; };
+		0BF32E4118A16D2C00CA021D /* wineJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wineJson.txt; sourceTree = "<group>"; };
+		0BF32E4318A1737800CA021D /* HWTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTNode.h; sourceTree = "<group>"; };
+		0BF32E4418A1737800CA021D /* HWTNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTNode.m; sourceTree = "<group>"; };
+		0BF32E4618A182C400CA021D /* customWineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = customWineCell.h; path = ../customWineCell.h; sourceTree = "<group>"; };
+		0BF32E4718A182C400CA021D /* customWineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = customWineCell.m; path = ../customWineCell.m; sourceTree = "<group>"; };
 		0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grapevinecorner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,16 +122,8 @@
 		0B13366918A0385E00747112 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0B13366A18A03BA400747112 /* RedWineCustomTVCell.h */,
-				0B13366B18A03BA400747112 /* RedWineCustomTVCell.m */,
-				0B13366D18A03BE600747112 /* WhiteWineCustomTVCell.h */,
-				0B13366E18A03BE600747112 /* WhiteWineCustomTVCell.m */,
-				0B13367318A03C2200747112 /* RoseWineCustomTVCell.h */,
-				0B13367418A03C2200747112 /* RoseWineCustomTVCell.m */,
-				0B13367618A03C3E00747112 /* SparklingWineCustomTVCell.h */,
-				0B13367718A03C3E00747112 /* SparklingWineCustomTVCell.m */,
-				0B13367918A03C5500747112 /* FortifiedWineCustomTVCell.h */,
-				0B13367A18A03C5500747112 /* FortifiedWineCustomTVCell.m */,
+				0BF32E4618A182C400CA021D /* customWineCell.h */,
+				0BF32E4718A182C400CA021D /* customWineCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -196,6 +181,7 @@
 				0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */,
 				0B8DDA5B1899A717008A318D /* WineTasterInformation.plist */,
 				0B75F9311896E4B000BA44C8 /* HappyWineTasterAppDelegate.h */,
+				0BF32E4118A16D2C00CA021D /* wineJson.txt */,
 				0BEDD7B9189C401E0020907A /* wineTreeJsonData.txt */,
 				0B75F9321896E4B000BA44C8 /* HappyWineTasterAppDelegate.m */,
 				0B75F92A1896E4B000BA44C8 /* HappyWineTaster-Info.plist */,
@@ -251,6 +237,8 @@
 		0B8DDA5418998403008A318D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0BF32E4318A1737800CA021D /* HWTNode.h */,
+				0BF32E4418A1737800CA021D /* HWTNode.m */,
 				0B13366318A0064500747112 /* GrapeTreeInformation.h */,
 				0B13366418A0064500747112 /* GrapeTreeInformation.m */,
 				0B8DDA55189984AB008A318D /* WineTasterInformation.h */,
@@ -343,6 +331,7 @@
 				0BF6A7C71899548D00B9BBB5 /* grapevinecorner.png in Resources */,
 				0B75F9361896E4B000BA44C8 /* Main.storyboard in Resources */,
 				0B8DDA5C1899A717008A318D /* WineTasterInformation.plist in Resources */,
+				0BF32E4218A16D2C00CA021D /* wineJson.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,20 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B13366F18A03BE600747112 /* WhiteWineCustomTVCell.m in Sources */,
-				0B13367818A03C3E00747112 /* SparklingWineCustomTVCell.m in Sources */,
 				0B8DDA4C18998076008A318D /* FindMeViewController.m in Sources */,
+				0BF32E4518A1737800CA021D /* HWTNode.m in Sources */,
 				0B75F92F1896E4B000BA44C8 /* main.m in Sources */,
-				0B13367B18A03C5500747112 /* FortifiedWineCustomTVCell.m in Sources */,
 				0B8DDA4F18998094008A318D /* GrapeTreeViewController.m in Sources */,
 				0B8DDA57189984AB008A318D /* WineTasterInformation.m in Sources */,
 				0B75F9391896E4B000BA44C8 /* HappyWineTasterViewController.m in Sources */,
+				0BF32E4818A182C400CA021D /* customWineCell.m in Sources */,
 				0BF0F4B21897FE5D003C2EA1 /* DropBehavior.m in Sources */,
 				0B13366518A0064500747112 /* GrapeTreeInformation.m in Sources */,
 				0B13366818A0076100747112 /* DataGenerator.m in Sources */,
 				0B75F9331896E4B000BA44C8 /* HappyWineTasterAppDelegate.m in Sources */,
-				0B13367518A03C2200747112 /* RoseWineCustomTVCell.m in Sources */,
-				0B13366C18A03BA400747112 /* RedWineCustomTVCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
