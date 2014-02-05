@@ -43,10 +43,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellIdentifier = @"customWineCell";
     
+    NSMutableArray *helperArray = [self.grapeTree.childLayer copy];
+    
     customWineCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.leftBtn.titleLabel.text = self.grapeTree.firstLayer[indexPath.row];
-    cell.upRightBtn.titleLabel.text = self.grapeTree.childLayer[0];
-    cell.downRightBtn.titleLabel.text = self.grapeTree.childLayer[1];
+
+    [helperArray enumerateObjectsUsingBlock:^(HWTNode *obj, NSUInteger idx, BOOL *stop) {
+        if (idx > 0) {
+            if ([obj.name  isEqual: @"line"]) {
+                stop = YES;
+            } else {
+                [helperArray delete:obj];
+            }
+        }
+    }];
+    cell.upRightBtn.titleLabel.text = helperArray[0];
+    cell.downRightBtn.titleLabel.text = helperArray[1];
     
         
     return cell;
