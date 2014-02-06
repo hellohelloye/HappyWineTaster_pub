@@ -10,6 +10,7 @@
 #import "DataGenerator.h"
 #import "GrapeTreeInformation.h"
 #import "customWineCell.h"
+#import "DetailGrapeTreeViewController.h"
 
 @interface GrapeTreeViewController ()
 @property(strong, nonatomic)GrapeTreeInformation *grapeTree;
@@ -29,6 +30,23 @@
 
     self.grapeTableView.delegate = self;
     self.grapeTableView.dataSource = self;
+    
+//    UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"splitWine"] toSize:self.view.frame.size];
+//    self.grapeTableView.backgroundColor = [UIColor colorWithPatternImage:myImage];
+    self.grapeTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"splitWine"]];
+    
+  //  self.navigationController.navigationBar.hidden = YES;
+    self.grapeTableView.separatorColor = [UIColor clearColor];
+    
+}
+
+- (UIImage *)scaleImage:(UIImage *)image toSize:(CGSize)newSize {
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage =UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndPDFContext();
+    
+    return newImage;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -47,22 +65,18 @@
     
     customWineCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.leftBtn.titleLabel.text = self.grapeTree.firstLayer[indexPath.row];
-
-    [helperArray enumerateObjectsUsingBlock:^(HWTNode *obj, NSUInteger idx, BOOL *stop) {
-        if (idx > 0) {
-            if ([obj.name  isEqual: @"line"]) {
-                stop = YES;
-            } else {
-                [helperArray delete:obj];
-            }
-        }
-    }];
-    cell.upRightBtn.titleLabel.text = helperArray[0];
-    cell.downRightBtn.titleLabel.text = helperArray[1];
+    cell.leftBtn.titleLabel.textColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor clearColor];
     
-        
+    [cell littleDancing];
+    
     return cell;
     
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
 }
 
 

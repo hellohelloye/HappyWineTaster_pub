@@ -14,4 +14,6 @@
 @property (strong, nonatomic)NSArray *firstLayer;
 @property (strong, nonatomic)NSArray *childLayer;
 
++ (id)GrapeTreeInformationFromNode:(HWTNode *)rootNode;
+
 @end

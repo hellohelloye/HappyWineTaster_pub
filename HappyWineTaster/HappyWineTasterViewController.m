@@ -41,6 +41,9 @@
    //  self.navigationController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
    //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
     
+//    self.navItem.titleView.backgroundColor = [UIColor redColor];
+//    self.navigationController.navigationItem.titleView.backgroundColor = [UIColor blueColor];
+    
     NSShadow *shadow = [[NSShadow alloc]init];
     shadow.shadowColor = [UIColor yellowColor];
     shadow.shadowOffset = CGSizeMake(1, 0);
@@ -61,12 +64,22 @@
                                                }
                                     forState:UIControlStateNormal];
     
-    [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
-    
-    
-     self.view.backgroundColor = [UIColor colorWithRed:255./255 green:222./255 blue:223./255 alpha:1.0];
+   // self.navigationController.navigationBar.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"header"]];
+    UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"header"] toSize:self.view.frame.size];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:myImage ];
    
 }
+
+
+- (UIImage *)scaleImage:(UIImage *)image toSize:(CGSize)newSize {
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage =UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndPDFContext();
+    
+    return newImage;
+}
+
 
 /*- (IBAction)showFindMeViewController:(id)sender {
     
@@ -200,7 +213,11 @@
     return _mydropBehavior;
 }
 
-- (IBAction)tap:(UITapGestureRecognizer *)sender {    
+- (IBAction)tap:(UITapGestureRecognizer *)sender {
+    
+    UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"mainBackground"] toSize:self.view.frame.size];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:myImage];
+                                 
     [self startRain];
 }
 
@@ -241,9 +258,6 @@ static const CGSize DROP_SIZE = {40,40};
     
 }
 
-- (void)wineTasterContainer {
-    
-}
 
 - (UIColor *)randomColor {
     switch (arc4random()%5) {

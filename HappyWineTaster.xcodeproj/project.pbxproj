@@ -28,6 +28,13 @@
 		0B8DDA5118998208008A318D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8DDA5018998208008A318D /* MapKit.framework */; };
 		0B8DDA57189984AB008A318D /* WineTasterInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8DDA56189984AB008A318D /* WineTasterInformation.m */; };
 		0B8DDA5C1899A717008A318D /* WineTasterInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B8DDA5B1899A717008A318D /* WineTasterInformation.plist */; };
+		0BD7A0B918A3FB4D00462B85 /* LadyDrink.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7A0B818A3FB4D00462B85 /* LadyDrink.png */; };
+		0BD7A0BB18A3FB5500462B85 /* wineBeauty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7A0BA18A3FB5500462B85 /* wineBeauty.png */; };
+		0BD7A0BD18A3FB5D00462B85 /* splitWine.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7A0BC18A3FB5D00462B85 /* splitWine.png */; };
+		0BD7A0BF18A3FB6100462B85 /* wineGrape.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7A0BE18A3FB6100462B85 /* wineGrape.png */; };
+		0BD7A0C118A4043400462B85 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7A0C018A4043400462B85 /* header.png */; };
+		0BD7A0C318A404ED00462B85 /* mainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7A0C218A404ED00462B85 /* mainBackground.png */; };
+		0BD7A0C618A425E500462B85 /* DetailGrapeTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7A0C518A425E500462B85 /* DetailGrapeTreeViewController.m */; };
 		0BED2E8F189AEEA7004BE23F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BED2E8E189AEEA7004BE23F /* CoreLocation.framework */; };
 		0BEDD7BA189C401E0020907A /* wineTreeJsonData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0BEDD7B9189C401E0020907A /* wineTreeJsonData.txt */; };
 		0BF0F4B21897FE5D003C2EA1 /* DropBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0F4B11897FE5D003C2EA1 /* DropBehavior.m */; };
@@ -80,6 +87,14 @@
 		0B8DDA55189984AB008A318D /* WineTasterInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineTasterInformation.h; sourceTree = "<group>"; };
 		0B8DDA56189984AB008A318D /* WineTasterInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineTasterInformation.m; sourceTree = "<group>"; };
 		0B8DDA5B1899A717008A318D /* WineTasterInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WineTasterInformation.plist; sourceTree = "<group>"; };
+		0BD7A0B818A3FB4D00462B85 /* LadyDrink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LadyDrink.png; sourceTree = "<group>"; };
+		0BD7A0BA18A3FB5500462B85 /* wineBeauty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wineBeauty.png; sourceTree = "<group>"; };
+		0BD7A0BC18A3FB5D00462B85 /* splitWine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splitWine.png; sourceTree = "<group>"; };
+		0BD7A0BE18A3FB6100462B85 /* wineGrape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wineGrape.png; sourceTree = "<group>"; };
+		0BD7A0C018A4043400462B85 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		0BD7A0C218A404ED00462B85 /* mainBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainBackground.png; sourceTree = "<group>"; };
+		0BD7A0C418A425E500462B85 /* DetailGrapeTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailGrapeTreeViewController.h; sourceTree = "<group>"; };
+		0BD7A0C518A425E500462B85 /* DetailGrapeTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailGrapeTreeViewController.m; sourceTree = "<group>"; };
 		0BED2E8E189AEEA7004BE23F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0BEDD7B9189C401E0020907A /* wineTreeJsonData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wineTreeJsonData.txt; sourceTree = "<group>"; };
 		0BF0F4B01897FE5D003C2EA1 /* DropBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBehavior.h; sourceTree = "<group>"; };
@@ -177,6 +192,12 @@
 		0B75F9291896E4B000BA44C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0BD7A0C218A404ED00462B85 /* mainBackground.png */,
+				0BD7A0C018A4043400462B85 /* header.png */,
+				0BD7A0BA18A3FB5500462B85 /* wineBeauty.png */,
+				0BD7A0BC18A3FB5D00462B85 /* splitWine.png */,
+				0BD7A0BE18A3FB6100462B85 /* wineGrape.png */,
+				0BD7A0B818A3FB4D00462B85 /* LadyDrink.png */,
 				0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */,
 				0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */,
 				0B8DDA5B1899A717008A318D /* WineTasterInformation.plist */,
@@ -219,6 +240,8 @@
 				0B8DDA4B18998076008A318D /* FindMeViewController.m */,
 				0B8DDA4D18998094008A318D /* GrapeTreeViewController.h */,
 				0B8DDA4E18998094008A318D /* GrapeTreeViewController.m */,
+				0BD7A0C418A425E500462B85 /* DetailGrapeTreeViewController.h */,
+				0BD7A0C518A425E500462B85 /* DetailGrapeTreeViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -325,11 +348,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF0F4B4189826A8003C2EA1 /* WineTasterInfor.plist in Resources */,
+				0BD7A0BD18A3FB5D00462B85 /* splitWine.png in Resources */,
 				0B75F93B1896E4B000BA44C8 /* Images.xcassets in Resources */,
 				0B75F92D1896E4B000BA44C8 /* InfoPlist.strings in Resources */,
 				0BEDD7BA189C401E0020907A /* wineTreeJsonData.txt in Resources */,
+				0BD7A0BB18A3FB5500462B85 /* wineBeauty.png in Resources */,
+				0BD7A0BF18A3FB6100462B85 /* wineGrape.png in Resources */,
+				0BD7A0B918A3FB4D00462B85 /* LadyDrink.png in Resources */,
+				0BD7A0C318A404ED00462B85 /* mainBackground.png in Resources */,
 				0BF6A7C71899548D00B9BBB5 /* grapevinecorner.png in Resources */,
 				0B75F9361896E4B000BA44C8 /* Main.storyboard in Resources */,
+				0BD7A0C118A4043400462B85 /* header.png in Resources */,
 				0B8DDA5C1899A717008A318D /* WineTasterInformation.plist in Resources */,
 				0BF32E4218A16D2C00CA021D /* wineJson.txt in Resources */,
 			);
@@ -361,6 +390,7 @@
 				0B13366518A0064500747112 /* GrapeTreeInformation.m in Sources */,
 				0B13366818A0076100747112 /* DataGenerator.m in Sources */,
 				0B75F9331896E4B000BA44C8 /* HappyWineTasterAppDelegate.m in Sources */,
+				0BD7A0C618A425E500462B85 /* DetailGrapeTreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
