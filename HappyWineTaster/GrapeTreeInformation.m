@@ -28,12 +28,10 @@
     [rootNode.children enumerateObjectsUsingBlock:^(HWTNode *obj, NSUInteger idx, BOOL *stop) {
         [helperParent addObject:obj.name];
         if (obj.children) {
-            if (idx-1 >= 0) {
-                [helperChildren addObject:@"line"];
-                [obj.children enumerateObjectsUsingBlock:^(HWTNode *obj, NSUInteger idx, BOOL *stop) {
-                    [helperChildren addObject:obj.name];
-                }];
-            }
+            [helperChildren addObject:@"line"];
+            [obj.children enumerateObjectsUsingBlock:^(HWTNode *obj, NSUInteger idx, BOOL *stop) {
+                [helperChildren addObject:obj.name];
+            }];
             grapeTree.childLayer = [helperChildren copy];
         }
     }];

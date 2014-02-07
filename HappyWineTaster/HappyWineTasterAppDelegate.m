@@ -12,7 +12,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSDictionary *attri = [NSDictionary dictionaryWithObjectsAndKeys:
+                           [UIFont fontWithName:@"Zapfino" size:10.0],
+                           NSFontAttributeName,[UIColor blackColor],
+                           NSForegroundColorAttributeName,
+                           nil];
+    [[UINavigationBar appearance] setTitleTextAttributes:attri];
+
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Previous" style:UIBarButtonItemStylePlain target:nil action:nil];
+
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;

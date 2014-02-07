@@ -30,26 +30,27 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    
-//    NSDictionary *attri = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Zapfino" size:15.0],NSFontAttributeName,[UIColor whiteColor], NSForegroundColorAttributeName, nil];
-//    [[UINavigationBar appearance] setTitleTextAttributes:attri];
-//
-    
-//    
-//    UILabel *myTitle = [[UILabel alloc] initWithFrame:CGRectMake(self.navItem.titleView.frame.origin.x, self.navItem.titleView.frame.origin.y, self.navItem.titleView.frame.size.width, self.navItem.titleView.frame.size.height)];
-//    myTitle.backgroundColor = [UIColor blackColor];
-//    myTitle.font = [UIFont fontWithName:@"Zapfino" size:15.0];
-//    myTitle.textColor = [UIColor whiteColor];
-//    self.navItem.titleView = myTitle;
-    
-    
+   
     NSShadow *shadow = [[NSShadow alloc]init];
     shadow.shadowColor = [UIColor yellowColor];
     shadow.shadowOffset = CGSizeMake(1, 0);
     
+    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Previous" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    [backButtonItem setTitleTextAttributes:@{
+                                                NSForegroundColorAttributeName: [UIColor redColor],
+                                                NSShadowAttributeName:shadow,
+                                                NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
+                                            }
+                                            forState:UIControlStateNormal];
+    
+    
+    self.navItem.backBarButtonItem = backButtonItem;
+    
+    
+
     [self.navLeftBtn setTitleTextAttributes:@{
                                               NSForegroundColorAttributeName: [UIColor redColor],
-                                              NSShadowAttributeName:shadow,
                                               NSShadowAttributeName:shadow,
                                               NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
                                               }
@@ -57,7 +58,6 @@
     
     [self.navRightBtn setTitleTextAttributes:@{
                                                NSForegroundColorAttributeName: [UIColor redColor],
-                                               NSShadowAttributeName:shadow,
                                                NSShadowAttributeName:shadow,
                                                NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
                                                }

@@ -33,7 +33,8 @@
     
     self.grapeTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"splitWine"]];
     
-  //  self.navigationController.navigationBar.hidden = YES;
+    //self.navigationController.navigationBar.hidden = YES;    
+    
     self.grapeTableView.separatorColor = [UIColor clearColor];
     
 }

@@ -201,10 +201,8 @@
 				0BF6A7C61899548D00B9BBB5 /* grapevinecorner.png */,
 				0BF0F4B3189826A8003C2EA1 /* WineTasterInfor.plist */,
 				0B8DDA5B1899A717008A318D /* WineTasterInformation.plist */,
-				0B75F9311896E4B000BA44C8 /* HappyWineTasterAppDelegate.h */,
 				0BF32E4118A16D2C00CA021D /* wineJson.txt */,
 				0BEDD7B9189C401E0020907A /* wineTreeJsonData.txt */,
-				0B75F9321896E4B000BA44C8 /* HappyWineTasterAppDelegate.m */,
 				0B75F92A1896E4B000BA44C8 /* HappyWineTaster-Info.plist */,
 				0B75F92B1896E4B000BA44C8 /* InfoPlist.strings */,
 				0B75F92E1896E4B000BA44C8 /* main.m */,
@@ -242,6 +240,8 @@
 				0B8DDA4E18998094008A318D /* GrapeTreeViewController.m */,
 				0BD7A0C418A425E500462B85 /* DetailGrapeTreeViewController.h */,
 				0BD7A0C518A425E500462B85 /* DetailGrapeTreeViewController.m */,
+				0B75F9311896E4B000BA44C8 /* HappyWineTasterAppDelegate.h */,
+				0B75F9321896E4B000BA44C8 /* HappyWineTasterAppDelegate.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
