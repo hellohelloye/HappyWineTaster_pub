@@ -18,13 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"LadyDrink"] toSize:self.view.frame.size];
     self.view.backgroundColor = [UIColor colorWithPatternImage:myImage];
-    
 }
 
 

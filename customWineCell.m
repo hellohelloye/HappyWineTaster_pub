@@ -29,12 +29,9 @@
 
 - (void)littleDancing {
     
-    self.leftBtn.clipsToBounds = YES;
-    self.leftBtn.layer.cornerRadius = self.leftBtn.frame.size.width/2;
-    self.leftBtn.backgroundColor = [UIColor redColor];
-    self.leftBtn.titleLabel.textColor = [UIColor whiteColor];
-    [self.leftBtn.titleLabel setAutoresizesSubviews:YES];
-    
+    self.bigLabel.clipsToBounds = YES;
+    self.bigLabel.layer.cornerRadius = self.bigLabel.frame.size.width/2;
+    self.bigLabel.backgroundColor = [UIColor redColor];
     
     self.upRightBtn.clipsToBounds = YES;
     self.upRightBtn.layer.cornerRadius = self.upRightBtn.frame.size.width/2;
@@ -47,7 +44,7 @@
     self.littleBtn.clipsToBounds = YES;
     self.littleBtn.layer.cornerRadius = self.downRightBtn.frame.size.width/2;
     self.littleBtn.backgroundColor = [UIColor redColor];
-    
+ /*
     [UIView animateWithDuration:5
                           delay:0
                         options:UIViewAnimationOptionCurveLinear
@@ -119,6 +116,7 @@
                                               }];
                          }
                      }];
+  */
 }
 
 @end

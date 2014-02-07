@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface customWineCell : UITableViewCell
-
-@property (strong, nonatomic) IBOutlet UIButton *leftBtn;
+@property (strong, nonatomic) IBOutlet UILabel *bigLabel;
 @property (strong, nonatomic) IBOutlet UIButton *upRightBtn;
 @property (strong, nonatomic) IBOutlet UIButton *downRightBtn;
 @property (strong, nonatomic) IBOutlet UIButton *littleBtn;

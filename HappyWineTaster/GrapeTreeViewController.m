@@ -31,8 +31,6 @@
     self.grapeTableView.delegate = self;
     self.grapeTableView.dataSource = self;
     
-//    UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"splitWine"] toSize:self.view.frame.size];
-//    self.grapeTableView.backgroundColor = [UIColor colorWithPatternImage:myImage];
     self.grapeTableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"splitWine"]];
     
   //  self.navigationController.navigationBar.hidden = YES;
@@ -61,11 +59,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellIdentifier = @"customWineCell";
     
-    NSMutableArray *helperArray = [self.grapeTree.childLayer copy];
-    
     customWineCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    cell.leftBtn.titleLabel.text = self.grapeTree.firstLayer[indexPath.row];
-    cell.leftBtn.titleLabel.textColor = [UIColor whiteColor];
+//    UILabel *myLabel = [[UILabel alloc] initWithFrame:CGRectMake(cell.bigView.frame.origin.x, cell.bigView.frame.origin.y, cell.bigView.frame.size.width, cell.bigView.frame.size.height)];
+//    myLabel.text = self.grapeTree.firstLayer[indexPath.row];
+//    myLabel.textColor = [UIColor whiteColor];
+//    myLabel.backgroundColor  = [UIColor blackColor];
+//    
+//    [cell.bigView addSubview:myLabel];
+    
+    cell.bigLabel.text = self.grapeTree.firstLayer[indexPath.row];
+    cell.bigLabel.textColor = [UIColor whiteColor];
+    cell.bigLabel.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:10.0f];
+    [cell.bigLabel setTextAlignment:NSTextAlignmentCenter];
     cell.backgroundColor = [UIColor clearColor];
     
     [cell littleDancing];

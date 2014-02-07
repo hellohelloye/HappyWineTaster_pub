@@ -20,16 +20,9 @@
 @property (strong, nonatomic) IBOutlet UINavigationItem *navItem;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navLeftBtn;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *navRightBtn;
-//@property (strong, nonatomic) WineTasterInformation *wineTasterInfor;
-//@property (strong, nonatomic, readwrite) NSArray *tasters;
 @end
 
 @implementation HappyWineTasterViewController
-/*
-- (void)awakeFromNib {
-    self.tasters = [[[DataGenerator alloc]wineTasterInformationGenerator] copy];
-    [super awakeFromNib];
-} */
 
 - (void)viewDidLoad
 {
@@ -38,11 +31,17 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-   //  self.navigationController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
-   //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grapvinecorner.png"]];
+//    NSDictionary *attri = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Zapfino" size:15.0],NSFontAttributeName,[UIColor whiteColor], NSForegroundColorAttributeName, nil];
+//    [[UINavigationBar appearance] setTitleTextAttributes:attri];
+//
     
-//    self.navItem.titleView.backgroundColor = [UIColor redColor];
-//    self.navigationController.navigationItem.titleView.backgroundColor = [UIColor blueColor];
+//    
+//    UILabel *myTitle = [[UILabel alloc] initWithFrame:CGRectMake(self.navItem.titleView.frame.origin.x, self.navItem.titleView.frame.origin.y, self.navItem.titleView.frame.size.width, self.navItem.titleView.frame.size.height)];
+//    myTitle.backgroundColor = [UIColor blackColor];
+//    myTitle.font = [UIFont fontWithName:@"Zapfino" size:15.0];
+//    myTitle.textColor = [UIColor whiteColor];
+//    self.navItem.titleView = myTitle;
+    
     
     NSShadow *shadow = [[NSShadow alloc]init];
     shadow.shadowColor = [UIColor yellowColor];
@@ -64,7 +63,6 @@
                                                }
                                     forState:UIControlStateNormal];
     
-   // self.navigationController.navigationBar.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"header"]];
     UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"header"] toSize:self.view.frame.size];
     self.view.backgroundColor = [UIColor colorWithPatternImage:myImage ];
    
