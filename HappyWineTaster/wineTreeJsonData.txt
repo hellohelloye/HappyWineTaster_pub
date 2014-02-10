@@ -1,5 +1,5 @@
 {
-    "RED": {
+    "Red": {
         "Fruity Red": {
             "Blueberry Blackberry": {
                 "Spicy": [
@@ -140,7 +140,7 @@
             }
         }
     },
-    "WHITE": {
+    "White": {
         "Sweet White" : {
              "Off-Dry Apricots Peaches" : [
                   "Cour Cheverny",
@@ -220,7 +220,7 @@
              ]
         }
     },
-    "ROSE": {
+    "Rose": {
          "Dry Rose" : {
              "Savory/Meaty" : [
                   "Cabernet Sauvignon Rose",
@@ -247,7 +247,7 @@
              "Garnacha Rosado"
          ]
     },
-    "SPARKLING WINE": {
+    "Sparkling Wine": {
          "Rose Sparkling Wine" : {
               "Dry Strawberry Light" : [
                    "Rose Champagne",
@@ -309,7 +309,7 @@
               ]
          }
     },
-    "FORTIFIED WINE": {
+    "Fortified Wine": {
          "Red Fortified" : [
             "Vintage Port",
             "Ruby Port",

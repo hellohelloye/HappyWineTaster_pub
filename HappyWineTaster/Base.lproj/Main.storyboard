@@ -148,7 +148,6 @@
                                             <outlet property="downRightBtn" destination="rPs-pw-hBw" id="I2O-K1-oSy"/>
                                             <outlet property="littleBtn" destination="New-AG-xFo" id="btE-d1-PfU"/>
                                             <outlet property="upRightBtn" destination="XRw-bz-qJn" id="4Ma-St-MeY"/>
-                                            <segue destination="hGP-Ke-mUA" kind="push" id="xuO-w7-EY4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

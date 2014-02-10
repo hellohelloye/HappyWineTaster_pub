@@ -83,7 +83,7 @@
                          
                      }];
     
-    
+ */
     [UIView animateWithDuration:1
                           delay:0
                         options:UIViewAnimationOptionTransitionFlipFromBottom
@@ -116,7 +116,7 @@
                                               }];
                          }
                      }];
-  */
+  
 }
 
 @end

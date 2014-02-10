@@ -63,20 +63,13 @@
                                                }
                                     forState:UIControlStateNormal];
     
-    UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"header"] toSize:self.view.frame.size];
+    UIImage *myImage = [[Utility alloc] scaleImage:[UIImage imageNamed:@"header"] toSize:self.view.frame.size];
     self.view.backgroundColor = [UIColor colorWithPatternImage:myImage ];
    
 }
 
 
-- (UIImage *)scaleImage:(UIImage *)image toSize:(CGSize)newSize {
-    UIGraphicsBeginImageContext(newSize);
-    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    UIImage *newImage =UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndPDFContext();
-    
-    return newImage;
-}
+
 
 
 /*- (IBAction)showFindMeViewController:(id)sender {
@@ -213,7 +206,7 @@
 
 - (IBAction)tap:(UITapGestureRecognizer *)sender {
     
-    UIImage *myImage = [self scaleImage:[UIImage imageNamed:@"mainBackground"] toSize:self.view.frame.size];
+    UIImage *myImage = [[Utility alloc] scaleImage:[UIImage imageNamed:@"mainBackground"] toSize:self.view.frame.size];
     self.view.backgroundColor = [UIColor colorWithPatternImage:myImage];
                                  
     [self startRain];

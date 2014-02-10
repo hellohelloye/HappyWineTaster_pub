@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Utility.h"
 
 @interface HappyWineTasterViewController : UIViewController
 @property (strong, nonatomic, readonly) NSArray *tasters;

@@ -18,9 +18,6 @@
                            NSForegroundColorAttributeName,
                            nil];
     [[UINavigationBar appearance] setTitleTextAttributes:attri];
-
-    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Previous" style:UIBarButtonItemStylePlain target:nil action:nil];
-
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
