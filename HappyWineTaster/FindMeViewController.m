@@ -150,6 +150,9 @@ MKRoute *routeDetails;
     return routeLineRender;
 }
 
+//////////////////////////////////////
+/////// add two different type annotation ???  ---waiting for exploring
+/////////////
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     if ([annotation isKindOfClass:[WineTasterInformation class]]) {
         MKAnnotationView *annotationView = (MKAnnotationView *)[_wineTasterMapView dequeueReusableAnnotationViewWithIdentifier:@"WineTasterInformation"];
