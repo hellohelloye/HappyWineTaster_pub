@@ -18,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (strong, nonatomic) IBOutlet UILabel *transportLabel;
 @property (strong, nonatomic) IBOutlet UITextView *stepsTextView;
+@property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property (strong, nonatomic) IBOutlet UIToolbar *myToolBar;
 
 @property (strong, nonatomic) NSString *allSteps;
 

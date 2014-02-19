@@ -10,11 +10,21 @@
 #import "WineTasterInformation.h"
 #import "HappyWineTasterViewController.h"
 #import "DataGenerator.h"
+#import "Utility.h"
 
 @interface FindMeViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *goBackBtn;
 @property (strong, nonatomic) WineTasterInformation *wineTasterInfor;
 @property (strong, nonatomic) NSArray *tasters;
+
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *leftBarItem;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *rightBarItem;
+
+@property (strong, nonatomic) IBOutlet UILabel *destinationStatic;
+@property (strong, nonatomic) IBOutlet UILabel *distanceStatic;
+@property (strong, nonatomic) IBOutlet UILabel *transportStatic;
+@property (strong, nonatomic) IBOutlet UILabel *stepStatic;
+
 @end
 
 @implementation FindMeViewController
@@ -31,6 +41,47 @@ MKRoute *routeDetails;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImage *myBackgroudImage = [[Utility alloc] scaleImage:[UIImage imageNamed:@"wineTaster"] toSize:self.myScrollView.frame.size];
+    self.myScrollView.backgroundColor = [UIColor colorWithPatternImage:myBackgroudImage];
+    self.myToolBar.barTintColor = [UIColor lightGrayColor];
+    self.myToolBar.barStyle = UIBarStyleBlackTranslucent;
+    
+    [self propertiesDecoration];
+}
+
+- (void)propertiesDecoration {
+    NSShadow *shadow = [[NSShadow alloc]init];
+    shadow.shadowColor = [UIColor whiteColor];
+    shadow.shadowOffset = CGSizeMake(1, 0);
+    
+    [self.leftBarItem setTitleTextAttributes:@{
+                                               NSForegroundColorAttributeName: [UIColor blackColor],
+                                               NSShadowAttributeName:shadow,
+                                               NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
+                                               }
+                                    forState:UIControlStateNormal];
+    [self.rightBarItem setTitleTextAttributes:@{
+                                                NSForegroundColorAttributeName: [UIColor blackColor],
+                                                NSShadowAttributeName:shadow,
+                                                NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:10.0f]
+                                                }
+                                     forState:UIControlStateNormal];
+    
+    [self customMyLableStyle:self.destinationStatic];
+    [self customMyLableStyle:self.distanceStatic];
+    [self customMyLableStyle:self.transportStatic];
+    [self customMyLableStyle:self.stepStatic];
+    
+
+
+    self.stepsTextView.backgroundColor = [UIColor clearColor];
+}
+
+- (void)customMyLableStyle: (UILabel *)mylabel {
+    mylabel.font = [UIFont fontWithName:@"Zapfino" size:10.0f];
+    mylabel.shadowColor = [UIColor blackColor];
+    mylabel.textColor = [UIColor whiteColor];
+    mylabel.shadowOffset = CGSizeMake(1.5, 0);
 }
 
 - (void)setWineTasterMapView:(MKMapView *)wineTasterMapView {
@@ -108,6 +159,13 @@ MKRoute *routeDetails;
                 self.allSteps = [self.allSteps stringByAppendingString:@"\n\n"];
                 self.stepsTextView.text = self.allSteps;
             }
+            
+            [self customMyLableStyle:self.destinationLabel];
+            [self customMyLableStyle:self.distanceLabel];
+            [self customMyLableStyle:self.transportLabel];
+        
+            self.stepsTextView.font = [UIFont fontWithName:@"Zapfino" size:10.0f];
+            
         }
     }];
 }
@@ -175,7 +233,7 @@ MKRoute *routeDetails;
         MKPinAnnotationView *pinView = (MKPinAnnotationView *)[self.wineTasterMapView dequeueReusableAnnotationViewWithIdentifier:@"CustumPinAnnotationView"];
         if (!pinView) {
             pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
-            pinView.pinColor = MKPinAnnotationColorPurple;
+            //pinView.pinColor = MKPinAnnotationColorPurple;
             pinView.canShowCallout = YES;
         } else {
             pinView.annotation = annotation;
