@@ -10,5 +10,4 @@
 
 @interface DetailGrapeTreeViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *myNaviBtn;
-
 @end

@@ -19,9 +19,12 @@
 
 @implementation FindMeViewController
 
+CLPlacemark *thePlacemark;
+MKRoute *routeDetails;
+
 - (void)awakeFromNib {
     
-    self.tasters = [[[DataGenerator alloc]wineTasterInformationGenerator] copy];
+    self.tasters = [[[DataGenerator alloc] wineTasterInformationGenerator] copy];
     [super awakeFromNib];
 }
 
@@ -52,6 +55,72 @@
     
 }
 
+
+- (IBAction)addressSearch:(UITextField *)sender {
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder geocodeAddressString:sender.text completionHandler:^(NSArray *placemarks, NSError *error) {
+        if (error) {
+            NSLog(@"%@", error);
+        } else {
+            thePlacemark = [placemarks lastObject];
+            float spanX = 1.00725;
+            float spanY = 1.00725;
+            MKCoordinateRegion region;
+            region.center.latitude = thePlacemark.location.coordinate.latitude;
+            region.center.longitude = thePlacemark.location.coordinate.longitude;
+            region.span = MKCoordinateSpanMake(spanX, spanY);
+            [self.wineTasterMapView setRegion:region animated:YES];
+            [self addAnnotation:thePlacemark];
+        }
+    }];
+}
+
+- (void)addAnnotation: (CLPlacemark *)placemark {
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    point.coordinate = CLLocationCoordinate2DMake(placemark.location.coordinate.latitude, placemark.location.coordinate.longitude);
+    point.title = [placemark.addressDictionary objectForKey:@"Street"];
+    point.subtitle = [placemark.addressDictionary objectForKey:@"City"];
+    [self.wineTasterMapView addAnnotation:point];
+}
+
+
+- (IBAction)routeButtonPressed:(UIBarButtonItem *)sender {
+    MKDirectionsRequest *directionsRequest = [[MKDirectionsRequest alloc] init];
+    MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:thePlacemark];
+    [directionsRequest setSource:[MKMapItem mapItemForCurrentLocation]];
+    [directionsRequest setDestination:[[MKMapItem alloc] initWithPlacemark:placemark]];
+    directionsRequest.transportType = MKDirectionsTransportTypeAutomobile;
+    MKDirections *directions = [[MKDirections alloc] initWithRequest:directionsRequest];
+    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"Error %@", error.description);
+        } else {
+            routeDetails = response.routes.lastObject;
+            [self.wineTasterMapView addOverlay:routeDetails.polyline];
+            self.destinationLabel.text = [placemark.addressDictionary objectForKey:@"Street"];
+            self.distanceLabel.text = [NSString stringWithFormat:@"%0.1f Miles", routeDetails.distance/1609.344];
+            self.transportLabel.text = [NSString stringWithFormat:@"%u",routeDetails.transportType];
+            self.allSteps = @"";
+            for (int i = 0; i < routeDetails.steps.count; i++) {
+                MKRouteStep *step = [routeDetails.steps objectAtIndex:i];
+                NSString *newStep = step.instructions;
+                self.allSteps = [self.allSteps stringByAppendingString:newStep];
+                self.allSteps = [self.allSteps stringByAppendingString:@"\n\n"];
+                self.stepsTextView.text = self.allSteps;
+            }
+        }
+    }];
+}
+
+- (IBAction)clearRoute:(UIBarButtonItem *)sender {
+    self.destinationLabel.text = nil;
+    self.distanceLabel.text = nil;
+    self.transportLabel.text = nil;
+    self.stepsTextView.text = nil;
+    [self.wineTasterMapView removeOverlay:routeDetails.polyline];
+}
+
+
 - (BOOL)mapViewContainsLocation:(WineTasterInformation *)location {
     __block BOOL found = NO;
     [self.wineTasterMapView.annotations enumerateObjectsUsingBlock:^(id<MKAnnotation> annotation, NSUInteger idx, BOOL *stop) {
@@ -72,17 +141,23 @@
                 [self.wineTasterMapView addAnnotation:helperAnnotation];
             }
     }
-    
+}
+
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+    MKPolylineRenderer *routeLineRender = [[MKPolylineRenderer alloc] initWithPolyline:routeDetails.polyline];
+    routeLineRender.strokeColor = [UIColor redColor];
+    routeLineRender.lineWidth = 3;
+    return routeLineRender;
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    static NSString *identifier = @"WineTasterInformation";
     if ([annotation isKindOfClass:[WineTasterInformation class]]) {
-        MKAnnotationView *annotationView = (MKAnnotationView *)[_wineTasterMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        MKAnnotationView *annotationView = (MKAnnotationView *)[_wineTasterMapView dequeueReusableAnnotationViewWithIdentifier:@"WineTasterInformation"];
         if (!annotationView) {
-            annotationView = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:identifier];
+            annotationView = [[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"WineTasterInformation"];
             annotationView.enabled = YES;
             annotationView.canShowCallout = YES;
+            annotationView.backgroundColor = [UIColor darkGrayColor];
             if([mapView.delegate respondsToSelector:@selector(mapView:annotationView:calloutAccessoryControlTapped:)]) {
                 annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
             }
@@ -90,7 +165,21 @@
             annotationView.annotation = annotation;
         }
         return annotationView;
+    } else if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    } else {
+        MKPinAnnotationView *pinView = (MKPinAnnotationView *)[self.wineTasterMapView dequeueReusableAnnotationViewWithIdentifier:@"CustumPinAnnotationView"];
+        if (!pinView) {
+            pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
+            pinView.pinColor = MKPinAnnotationColorPurple;
+            pinView.canShowCallout = YES;
+        } else {
+            pinView.annotation = annotation;
+            pinView.pinColor = MKPinAnnotationColorPurple;
+        }
+        return pinView;
     }
+    
     return nil;
 }
 

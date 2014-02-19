@@ -12,5 +12,13 @@
 #import "HappyWineTasterViewController.h"
 
 @interface FindMeViewController : UIViewController <MKMapViewDelegate, MKAnnotation, CLLocationManagerDelegate>
+
 @property (strong, nonatomic) IBOutlet MKMapView *wineTasterMapView;
+@property (strong, nonatomic) IBOutlet UILabel *destinationLabel;
+@property (strong, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (strong, nonatomic) IBOutlet UILabel *transportLabel;
+@property (strong, nonatomic) IBOutlet UITextView *stepsTextView;
+
+@property (strong, nonatomic) NSString *allSteps;
+
 @end
