@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>21BF5484-C852-40D3-B5DD-8F7612098A37</string>
+	<string>44B661A1-26F6-4330-BD43-F5880153BCD1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HappyWineTaster</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DB20EB68-71BB-4C20-93F8-F7447D4C5090</key>
-		<string>https://github.com/mshanken/HappyWineTaster.git</string>
+		<key>9822DD85-AC46-4E95-8064-1287737D2FCF</key>
+		<string>https://github.com/hellohelloye/HappyWineTaster.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HappyWineTaster.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DB20EB68-71BB-4C20-93F8-F7447D4C5090</key>
+		<key>9822DD85-AC46-4E95-8064-1287737D2FCF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mshanken/HappyWineTaster.git</string>
+	<string>https://github.com/hellohelloye/HappyWineTaster.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DB20EB68-71BB-4C20-93F8-F7447D4C5090</string>
+	<string>9822DD85-AC46-4E95-8064-1287737D2FCF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DB20EB68-71BB-4C20-93F8-F7447D4C5090</string>
+			<string>9822DD85-AC46-4E95-8064-1287737D2FCF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HappyWineTaster</string>
 		</dict>
